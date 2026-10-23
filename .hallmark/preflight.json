@@ -1,0 +1,13 @@
+{
+  "scanned": "2026-10-23",
+  "findings": {
+    "fonts": "none (new project)",
+    "palette": "user-specified: #EC2B7A to #CEFF32 gradient, white heavy sans heads",
+    "motion": "none",
+    "spacing": "none",
+    "framework": "Nuxt 4.6 + Tailwind CSS 4.3 (@tailwindcss/vite), created this run",
+    "data": "Jakarta World Cinema 2026 schedule CSV (171 screenings, 107 films), mapped +14 days to Bandung"
+  },
+  "preserve": ["the user's two colours", "white heavy heads", "grain overlay on the gradient", "the CSV lineup and counts"],
+  "introduce": ["custom direction (by request)", "tokens", "gates", "app-screen states"]
+}

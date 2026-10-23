@@ -1,0 +1,32 @@
+[
+ {
+  "date": "2026-10-23",
+  "scope": "app",
+  "shape": "app screen",
+  "theme": "custom",
+  "axes": "mid/grotesk-heavy/neutral",
+  "hero": "masthead: white Archivo 125/900 wordmark in the pink hold, three facts in ink under bold rules",
+  "nav": "sticky ink band: eight festival dates, then Films and My plan",
+  "footer": "provenance notes on the lime end",
+  "imagery": "none; type-set ink poster until TMDB art",
+  "photos": [],
+  "entry": "none (app screen, no reveal)",
+  "fingerprint": "masthead / date band / filter row / vertical day timeline (agenda on phones) / plan ledger / films ledger",
+  "sections": [
+   "masthead",
+   "date band",
+   "filters",
+   "day timeline",
+   "plan",
+   "films table",
+   "film page"
+  ],
+  "signature": "the day timeline on the gradient: picks invert to solid ink, clashes are named in place, conflicts go dashed",
+  "waived": [
+   "23",
+   "49b"
+  ],
+  "prompt": "Bandung World Cinema schedule planner and guide, Nuxt 4 + Tailwind, neon #EC2B7A to #CEFF32 gradient, heavy white sans heads, grain, Google Calendar per screening",
+  "mode": "build"
+ }
+]
