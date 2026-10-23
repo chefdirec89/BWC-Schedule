@@ -21,7 +21,7 @@ export default defineNuxtConfig({
           content:
             'Plan your Bandung World Cinema 2026 screenings at CGV Paris Van Java, 14 to 21 November, and send them to Google Calendar.',
         },
-        { name: 'theme-color', content: '#EC2B7A' },
+        { name: 'theme-color', content: '#63072C' },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400;100,600;125,900&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400;100,600;125,900&family=IBM+Plex+Mono:wght@500&display=swap',
         },
       ],
       script: [

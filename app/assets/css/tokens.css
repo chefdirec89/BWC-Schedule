@@ -1,29 +1,37 @@
 @theme static {
-  /* The ground: the festival's two inks, top and foot of every page. */
-  --color-field: oklch(62.4% 0.229 3);        /* #EC2B7A */
-  --color-field-end: oklch(93.3% 0.217 123.1); /* #CEFF32 */
+  /* The ground: the poster's wine, flat. The pink is a panel set on it, never a wash. */
+  --color-field: oklch(32.6% 0.124 4.9);      /* #63072C */
+  --color-deep: oklch(19.1% 0.068 1.2);       /* #2A0312, the band and the ink on the pink */
+  --color-deep-2: oklch(26.1% 0.092 4);       /* #45081F, hover on the deep */
 
-  /* Ink is the only text colour on the field: 4.8:1 on the pink end, 16:1 on the lime. */
-  --color-ink: oklch(16% 0.035 350);
-  --color-ink-2: oklch(34% 0.035 350);   /* paper surfaces only */
-  --color-paper: oklch(98.5% 0.012 110);
-  --color-paper-2: oklch(94.5% 0.022 110);
-  --color-paper-3: oklch(90% 0.03 110);
-  --color-muted: oklch(50% 0.03 350);    /* paper surfaces only; field edges */
-  --color-rule: oklch(86% 0.02 110);     /* hairlines on paper */
-  --color-veil: oklch(98.5% 0.012 110 / 0.38); /* hover overlay on the field */
-  --color-veil-strong: oklch(98.5% 0.012 110 / 0.62); /* a slot that no longer fits the plan */
+  /* Cream is the only text colour on the wine: 11.6:1 on the field, 16.5:1 on the band. */
+  --color-ink: oklch(95.7% 0.01 72.7);        /* #F5F0EA */
+  --color-paper: oklch(95.7% 0.01 72.7);      /* the timeline's cards and the inputs */
+  --color-paper-2: oklch(91.6% 0.016 73.7);   /* #EAE2D8 */
+  --color-paper-3: oklch(86.9% 0.02 70);      /* #DDD2C6 */
+  --color-paper-ink: oklch(32.6% 0.124 4.9);  /* the wine again, 11.6:1 on paper */
+  --color-muted: oklch(49.4% 0.091 357.1);    /* #8A4A62, placeholders on paper: 5.7:1 */
+  /* Opaque, so the hour lines never strike through a slot that no longer fits. */
+  --color-veil: oklch(38.1% 0.12 0.8);        /* #721E3F, a tenth of the cream in the wine: hover, a blocked slot */
+  --color-veil-strong: oklch(42.9% 0.11 359); /* #7D314E, a blocked slot hovered */
 
-  /* The inversion is the signal: a pick, the current day and the primary action turn solid ink. */
-  --color-accent: oklch(16% 0.035 350);
-  --color-accent-ink: oklch(98.5% 0.012 110);
-  --color-focus: oklch(16% 0.035 350);
+  /* The pink is the signal: a pick, the current day and the primary action lift onto it. Deep wine on it: 5.5:1. */
+  --color-accent: oklch(66.2% 0.201 349.9);   /* #E752A4 */
+  --color-accent-2: oklch(70.9% 0.179 350.3); /* #F06BB0, hover: 6.6:1 under the deep */
+  --color-accent-ink: oklch(19.1% 0.068 1.2);
+
+  /* The sticker: green on green, mono, slapped on at an angle. 4.8:1. */
+  --color-sticker: oklch(43% 0.09 148.7);     /* #275D33 */
+  --color-sticker-ink: oklch(83% 0.106 138);  /* #A5D894 */
+
+  --color-focus: oklch(95.7% 0.01 72.7);
   --color-error: oklch(48% 0.19 27);
   --color-success: oklch(45% 0.12 150);
 
   --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Archivo", ui-sans-serif, system-ui, sans-serif;
   --font-outlier: var(--font-display);
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
   /* App scale, 1.2 from 16px. Display sizes step at breakpoints, never fluid. */
   --text-xs: 0.75rem;
@@ -47,6 +55,7 @@
 
   --radius-card: 0px;
   --radius-input: 0px;
+  --radius-tag: 4px;
   --radius-pill: 999px;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -63,8 +72,6 @@
   --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
   --rule-hair: 1px; --rule-bold: 2px; --shadow-card: none;
 
-  /* How long the pink holds before the ground starts to turn: the white heads live inside it. */
-  --ground-hold: 16rem;
   --texture-opacity: 0.08;
 
   /* Timeline: 72px an hour. */

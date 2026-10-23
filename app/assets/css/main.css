@@ -1,8 +1,9 @@
-/* Hallmark · shape: app screen · genre: editorial · theme: custom (by request) · idea: "each festival day printed as its own poster: the date set huge in ink, the field turning from pink toward lime down the day, your picks in solid ink" · vibe: "neon gig poster on a Swiss timetable"
- * paper: the field, oklch(62.4% 0.229 3) to oklch(93.3% 0.217 123.1), the user's #EC2B7A and #CEFF32 · accent: the ink inversion, oklch(16% 0.035 350) · display: Archivo 125/900 · body: Archivo 100/400 and 600
- * nav: one sticky ink band, the eight dates then all films and my plan · footer: provenance notes on the lime · signature: the day timeline, picks inverted to ink, clashes named in place, what no longer fits stepping back into the field · states: loading, empty, error, full
- * hero: masthead, the white wordmark inside the pink hold, three facts in ink beneath it
- * axes: mid/grotesk-heavy/neutral · posture: drenched (the field is the surface; ink derives from it) · texture: grain, by request, behind all content · contrast: pass · v2.0.0 */
+/* Hallmark · shape: app screen · genre: editorial · theme: custom (by request) · idea: "each festival day printed as its own poster: the date set huge in pink on the wine, your picks lifted onto the pink" · vibe: "wine-and-pink gig poster on a Swiss timetable"
+ * paper: the field, flat wine oklch(32.6% 0.124 4.9) #63072C, cream type #F5F0EA, from the user's poster reference · accent: the pink panel oklch(66.2% 0.201 349.9) #E752A4, deep wine #2A0312 on it · sticker: #A5D894 on #275D33 · display: Archivo 125/900 · body: Archivo 100/400 and 600 · sticker: IBM Plex Mono 500
+ * nav: one sticky deep-wine band, the eight dates then all films and my plan · footer: provenance notes on the wine · signature: the day timeline, picks lifted onto the pink, clashes named in place, what no longer fits stepping back into the wine · states: loading, empty, error, full
+ * hero: masthead, the cream wordmark on a tilted pink panel that bleeds off the right edge, a green sticker with the dates, three facts in deep wine
+ * axes: mid/grotesk-heavy/neutral · posture: drenched (the wine is the surface; cream and pink sit on it) · texture: grain, by request, behind all content · contrast: pass · v2.0.0 */
+/* Recolor 2026-10-23 · the pink-to-lime gradient became the poster's flat wine, so the ramp gap in the finish-review note no longer applies */
 /* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V5 · weakest: P, a planner wants to disappear into the task; the poster lives in the masthead, the band and the inversion, never on the controls */
 /* Hallmark · waive 23 · posture: drenched is declared on line 4; the ink the render tier counts is the date band (a toolbar), picked slots and rows, and TMDB posters once connected, and it cannot read the posture because Tailwind strips this stamp from the served CSS · the eight Bandung dates need a surface the white type can sit on anywhere down the field */
 /* Hallmark · waive 49b · film titles on /films are the films' own names and the cell's content, not chrome; two lines at 768, and the 72-character KlikFilm masterclass title reaches three at 320 · truncating a title would hide which film or session a row opens */
@@ -15,7 +16,8 @@
 
 @layer base {
   html {
-    background: var(--color-field-end);
+    background: var(--color-field);
+    scrollbar-color: var(--color-accent) var(--color-deep);
     scroll-padding-top: calc(var(--band-height) + var(--space-md));
   }
   body {
@@ -25,7 +27,7 @@
     font-synthesis: none;
   }
   :focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
-  ::selection { background: var(--color-ink); color: var(--color-paper); }
+  ::selection { background: var(--color-accent); color: var(--color-accent-ink); }
   h1, h2, h3 {
     font-weight: 900;
     font-stretch: 125%;
@@ -37,7 +39,7 @@
 }
 
 @layer components {
-  /* The ground: the pink holds under the white heads, then turns toward the lime. */
+  /* The ground: flat wine, as on the poster. */
   .ground {
     position: relative;
     isolation: isolate;
@@ -45,8 +47,6 @@
     flex-direction: column;
     min-height: 100dvh;
     background-color: var(--color-field);
-    background-image: linear-gradient(to bottom, var(--color-field) 0, var(--color-field) var(--ground-hold), var(--color-field-end) 100%);
-    background-image: linear-gradient(in oklch to bottom, var(--color-field) 0, var(--color-field) var(--ground-hold), var(--color-field-end) 100%);
   }
   .ground::before {
     content: "";
@@ -72,12 +72,66 @@
     top: calc(-1 * var(--space-3xl));
     z-index: var(--z-toast);
     padding: var(--space-xs) var(--space-md);
-    background: var(--color-ink);
-    color: var(--color-paper);
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
   }
-  .skip:focus-visible { top: var(--space-md); outline-color: var(--color-paper); outline-offset: -5px; }
+  .skip:focus-visible { top: var(--space-md); outline-color: var(--color-accent-ink); outline-offset: -5px; }
 
-  /* Masthead */
+  /* Masthead: the poster's tilted pink panel, bleeding off the right edge, the cream wordmark on it. */
+  .masthead {
+    --panel-top: var(--space-md);
+    --panel-gap: var(--space-lg);
+    --panel-left: calc((100% - 100vw) / 2);
+    --tilt-top: min(3vw, 56px);
+    --tilt-bottom: min(2vw, 36px);
+    --tilt-left: 0px;
+    position: relative;
+    isolation: isolate;
+    padding-top: calc(var(--panel-top) + var(--space-xl));
+    padding-bottom: calc(var(--panel-gap) + var(--tilt-bottom) + var(--space-xl));
+    color: var(--color-accent-ink);
+  }
+  .masthead::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: var(--panel-top);
+    bottom: var(--panel-gap);
+    left: var(--panel-left);
+    right: calc((100% - 100vw) / 2);
+    background: var(--color-accent);
+    clip-path: polygon(0 0, 100% var(--tilt-top), 100% calc(100% - var(--tilt-bottom)), var(--tilt-left) 100%);
+  }
+  .masthead :focus-visible { outline-color: var(--color-accent-ink); }
+  /* From 64rem the wine shows on the left too, and the panel's left edge leans in. */
+  @media (min-width: 64rem) {
+    .masthead {
+      --panel-top: var(--space-xl);
+      --panel-gap: var(--space-xl);
+      --panel-left: var(--space-lg);
+      --tilt-left: var(--space-lg);
+      padding-top: calc(var(--panel-top) + var(--space-2xl));
+    }
+  }
+
+  .sticker {
+    display: inline-block;
+    padding: var(--space-2xs) var(--space-sm);
+    border-radius: var(--radius-tag);
+    background: var(--color-sticker);
+    color: var(--color-sticker-ink);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transform: rotate(4deg);
+  }
+  @media (min-width: 64rem) {
+    .sticker { font-size: var(--text-md); padding-inline: var(--space-md); }
+  }
   .wordmark {
     color: var(--color-paper);
     font-family: var(--font-display);
@@ -100,7 +154,7 @@
   .wordmark--small:hover { text-decoration: underline; text-decoration-thickness: var(--rule-bold); text-underline-offset: 0.18em; }
 
   .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-md) var(--gap-columns); }
-  .facts > p, .facts dl > div { border-top: var(--rule-bold) solid var(--color-ink); padding-top: var(--space-xs); }
+  .facts > p, .facts dl > div { border-top: var(--rule-bold) solid currentColor; padding-top: var(--space-xs); }
   .facts dt { font-size: var(--text-sm); }
   .facts dd { margin: 0; font-weight: 600; }
   .facts__lede { grid-column: 1 / -1; font-size: var(--text-lg); font-weight: 600; max-width: 34ch; }
@@ -114,8 +168,8 @@
     position: sticky;
     top: 0;
     z-index: var(--z-sticky-nav);
-    background: var(--color-ink);
-    color: var(--color-paper);
+    background: var(--color-deep);
+    color: var(--color-ink);
   }
   .band__inner { display: flex; align-items: stretch; min-height: var(--band-height); }
   .band__days {
@@ -129,7 +183,7 @@
     scrollbar-width: none;
     overscroll-behavior-x: contain;
   }
-  .band__pages { display: flex; flex-shrink: 0; margin: 0; padding: 0; list-style: none; border-left: var(--rule-hair) solid var(--color-ink-2); }
+  .band__pages { display: flex; flex-shrink: 0; margin: 0; padding: 0; list-style: none; border-left: var(--rule-hair) solid var(--color-field); }
   .band__link {
     display: flex;
     flex-direction: column;
@@ -137,22 +191,28 @@
     height: 100%;
     min-width: 4.25rem;
     padding-inline: var(--space-sm);
-    color: var(--color-paper);
+    color: var(--color-ink);
     text-decoration: none;
     white-space: nowrap;
     transition: background-color var(--dur-short) var(--ease-out);
   }
-  .band__link:hover { background: var(--color-ink-2); }
-  .band__link:focus-visible { outline-color: var(--color-paper); outline-offset: -6px; }
-  .band__link[aria-current="page"] { background: var(--color-paper); color: var(--color-ink); }
-  .band__link[aria-current="page"]:focus-visible { outline-color: var(--color-ink); }
+  .band__link:hover { background: var(--color-deep-2); }
+  .band__link:focus-visible { outline-color: var(--color-ink); outline-offset: -6px; }
+  .band__link[aria-current="page"] { background: var(--color-accent); color: var(--color-accent-ink); }
+  .band__link[aria-current="page"]:focus-visible { outline-color: var(--color-accent-ink); }
   .band__weekday { font-size: var(--text-sm); line-height: 1.2; }
   .band__date { font-size: var(--text-xl); font-weight: 900; font-stretch: 125%; line-height: 1; font-variant-numeric: tabular-nums; }
   .band__page { flex-direction: row; align-items: center; gap: var(--space-xs); font-weight: 600; }
+  /* The plan count is a small sticker. */
   .band__count {
     min-width: 1.75rem;
     padding: var(--space-3xs) var(--space-2xs);
-    border: var(--rule-hair) solid currentColor;
+    border-radius: var(--radius-tag);
+    background: var(--color-sticker);
+    color: var(--color-sticker-ink);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    font-weight: 500;
     font-variant-numeric: tabular-nums;
     text-align: center;
     line-height: 1.2;
@@ -177,7 +237,7 @@
     gap: var(--space-xs);
     min-height: var(--control);
     padding: 0 var(--space-md);
-    border: var(--rule-bold) solid var(--color-ink);
+    border: var(--rule-bold) solid var(--color-accent);
     border-radius: var(--radius-input);
     background: var(--color-accent);
     color: var(--color-accent-ink);
@@ -190,12 +250,12 @@
     transition: background-color var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out);
   }
   .btn::before { content: ""; position: absolute; inset: -4px 0; }
-  .btn:hover { background: var(--color-ink-2); }
+  .btn:hover { background: var(--color-accent-2); border-color: var(--color-accent-2); }
   .btn:active { transform: translateY(1px); }
   .btn:disabled, .btn[aria-disabled="true"] { opacity: 0.55; cursor: not-allowed; transform: none; }
   .btn[aria-busy="true"] { cursor: progress; }
-  .btn--quiet { background: transparent; color: var(--color-ink); }
-  .btn--quiet:hover { background: var(--color-veil); }
+  .btn--quiet { background: transparent; color: var(--color-ink); border-color: currentColor; }
+  .btn--quiet:hover { background: var(--color-veil); border-color: currentColor; }
   .btn svg { flex-shrink: 0; }
 
   .textlink {
@@ -219,23 +279,24 @@
     width: 100%;
     min-height: var(--control);
     padding: 0 var(--space-sm);
-    border: var(--rule-hair) solid var(--color-ink);
+    border: var(--rule-hair) solid var(--color-paper);
     border-radius: var(--radius-input);
     background: var(--color-paper);
-    color: var(--color-ink);
+    color: var(--color-paper-ink);
+    caret-color: var(--color-paper-ink);
     outline: 3px solid transparent;
     outline-offset: -4px;
     transition: background-color var(--dur-short) var(--ease-out);
   }
   .field::placeholder { color: var(--color-muted); }
   .field:hover { background: var(--color-paper-2); }
-  .field:focus-visible { outline-color: var(--color-focus); }
+  .field:focus-visible { outline-color: var(--color-paper-ink); }
   .field:disabled { opacity: 0.55; cursor: not-allowed; }
   .field[aria-invalid="true"] { border-color: var(--color-error); }
   select.field {
     appearance: none;
     padding-right: var(--space-xl);
-    background-image: linear-gradient(45deg, transparent 50%, var(--color-ink) 50%), linear-gradient(135deg, var(--color-ink) 50%, transparent 50%);
+    background-image: linear-gradient(45deg, transparent 50%, var(--color-paper-ink) 50%), linear-gradient(135deg, var(--color-paper-ink) 50%, transparent 50%);
     background-position: calc(100% - 18px) 55%, calc(100% - 12px) 55%;
     background-size: 6px 6px, 6px 6px;
     background-repeat: no-repeat;
@@ -256,7 +317,7 @@
     width: 20px;
     height: 20px;
     margin: 0;
-    accent-color: var(--color-ink);
+    accent-color: var(--color-accent);
     cursor: pointer;
   }
   .check:has(input:disabled) { opacity: 0.55; cursor: not-allowed; }
@@ -280,7 +341,7 @@
     .filters__checks { grid-column: auto; flex-wrap: nowrap; }
   }
 
-  /* Each day prints as its own poster: the date numeral at display scale, in ink. */
+  /* Each day prints as its own poster: the date numeral at display scale, in the pink. */
   .day-head {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
@@ -293,6 +354,7 @@
   }
   .day-head__num {
     grid-area: num;
+    color: var(--color-accent);
     font-size: var(--text-day);
     line-height: 0.8;
     letter-spacing: 0;
@@ -336,8 +398,8 @@
   .slot__note { grid-area: note; display: flex; align-items: center; gap: var(--space-2xs); font-size: var(--text-sm); font-weight: 600; }
   .slot__actions { grid-area: pick; position: relative; z-index: 2; display: flex; align-items: flex-start; gap: var(--space-2xs); }
 
-  .slot.is-picked { background: var(--color-ink); color: var(--color-paper); }
-  .slot.is-picked:hover { background: var(--color-ink-2); }
+  .slot.is-picked { background: var(--color-accent); color: var(--color-accent-ink); }
+  .slot.is-picked:hover { background: var(--color-accent-2); }
   .slot.is-blocked { border-top-style: dashed; }
 
   @media (min-width: 64rem) {
@@ -373,15 +435,18 @@
       flex-direction: column;
       gap: var(--space-3xs);
       padding: var(--space-xs) var(--space-sm);
-      border: var(--rule-bold) solid var(--color-ink);
+      border: var(--rule-bold) solid transparent;
       background: var(--color-paper);
+      color: var(--color-paper-ink);
       overflow: hidden;
       container-type: size;
     }
     .slot:hover { background: var(--color-paper-2); }
-    /* What no longer fits steps back into the field; what still fits stays paper. */
-    .slot.is-blocked { border-style: dashed; background: var(--color-veil-strong); }
-    .slot.is-blocked:hover { background: var(--color-paper-2); }
+    .slot:not(.is-blocked, .is-picked) :focus-visible { outline-color: var(--color-paper-ink); }
+    .slot:not(.is-blocked, .is-picked) .pick:hover { background: var(--color-paper-ink); color: var(--color-paper); }
+    /* What no longer fits steps back into the wine; what still fits stays paper. */
+    .slot.is-blocked { border-color: var(--color-ink); border-style: dashed; background: var(--color-veil); color: var(--color-ink); }
+    .slot.is-blocked:hover { background: var(--color-veil-strong); }
     /* The time line holds the height of the controls, so the title starts below them. */
     .slot__time { flex-direction: row; flex-wrap: wrap; min-height: calc(var(--space-xl) - var(--space-sm)); padding-right: var(--space-xl); font-size: var(--text-sm); }
     .slot.is-picked .slot__time { padding-right: calc(var(--space-2xl) + var(--space-sm)); }
@@ -418,19 +483,19 @@
     transition: background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out), transform var(--dur-micro) var(--ease-out);
   }
   .pick::before { content: ""; position: absolute; inset: -6px; }
-  .pick:hover { background: var(--color-ink); color: var(--color-paper); }
+  .pick:hover { background: var(--color-ink); color: var(--color-field); }
   .pick:active { transform: translateY(1px); }
   .pick:disabled { opacity: 0.55; cursor: not-allowed; }
-  .pick[aria-pressed="true"] { background: var(--color-paper); color: var(--color-ink); border-color: var(--color-paper); }
-  .pick[aria-pressed="true"]:hover { background: var(--color-paper-3); }
+  .pick[aria-pressed="true"] { background: var(--color-accent-ink); color: var(--color-accent); border-color: var(--color-accent-ink); }
+  .pick[aria-pressed="true"]:hover { background: var(--color-deep-2); border-color: var(--color-deep-2); }
 
-  /* An ink surface swaps every ink it holds. */
-  .inverted { background: var(--color-ink); color: var(--color-paper); }
-  .inverted :focus-visible, .is-picked :focus-visible { outline-color: var(--color-paper); }
-  .inverted .btn { background: var(--color-paper); color: var(--color-ink); border-color: var(--color-paper); }
-  .inverted .btn:hover { background: var(--color-paper-3); }
-  .inverted .btn--quiet { background: transparent; color: var(--color-paper); }
-  .inverted .btn--quiet:hover, .is-picked .cal-icon:hover { background: var(--color-ink-2); }
+  /* A pink surface swaps every ink it holds for the deep wine. */
+  .inverted { background: var(--color-accent); color: var(--color-accent-ink); }
+  .inverted :focus-visible, .is-picked :focus-visible { outline-color: var(--color-accent-ink); }
+  .inverted .btn { background: var(--color-accent-ink); color: var(--color-accent); border-color: var(--color-accent-ink); }
+  .inverted .btn:hover { background: var(--color-deep-2); border-color: var(--color-deep-2); }
+  .inverted .btn--quiet { background: transparent; color: var(--color-accent-ink); border-color: currentColor; }
+  .inverted .btn--quiet:hover { background: var(--color-accent-2); border-color: currentColor; }
 
   .cal-icon {
     position: relative;
@@ -443,13 +508,13 @@
     transition: background-color var(--dur-micro) var(--ease-out);
   }
   .cal-icon::before { content: ""; position: absolute; inset: -6px; }
-  .cal-icon:hover { background: var(--color-ink-2); }
+  .cal-icon:hover { background: var(--color-accent-ink); color: var(--color-accent); }
   .cal-icon:active { transform: translateY(1px); }
 
   .legend { display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-lg); font-size: var(--text-sm); }
   .legend__key { display: inline-flex; align-items: center; gap: var(--space-xs); }
   .legend__swatch { width: 24px; height: 16px; border: var(--rule-bold) solid var(--color-ink); }
-  .legend__swatch--picked { background: var(--color-ink); }
+  .legend__swatch--picked { background: var(--color-accent); border-color: var(--color-accent); }
   .legend__swatch--blocked { border-style: dashed; }
 
   /* TMDB's poster, only when one exists. */
@@ -458,11 +523,11 @@
     aspect-ratio: 2 / 3;
     margin: 0;
     overflow: hidden;
-    background: var(--color-ink);
+    background: var(--color-deep);
   }
   .poster > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
-  /* Tables and lists on the field */
+  /* Tables and lists on the wine */
   .ledger { width: 100%; border-collapse: collapse; }
   .ledger th { padding: var(--space-xs) var(--space-sm) var(--space-xs) 0; font-size: var(--text-sm); font-weight: 600; text-align: left; white-space: nowrap; border-bottom: var(--rule-bold) solid var(--color-ink); }
   .ledger td { padding: var(--space-sm) var(--space-sm) var(--space-sm) 0; vertical-align: top; border-bottom: var(--rule-hair) solid var(--color-ink); }
@@ -490,6 +555,7 @@
   .row__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs) var(--space-md); }
   /* A boxed row hangs its padding (and frame) into the gutter, so its columns stay on the grid. */
   .row--boxed { margin-inline: calc(-1 * var(--space-sm)); padding-inline: var(--space-sm); }
+  .row.inverted { border-bottom-color: var(--color-accent); }
   /* Dashed means a clash, here as on the timeline. */
   .row--clash {
     margin-block: var(--space-xs);

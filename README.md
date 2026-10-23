@@ -66,10 +66,11 @@ Set `NUXT_PUBLIC_SITE_URL` in production so event descriptions link back to the 
 
 Built with [Hallmark](https://github.com/Nutlope/hallmark) (installed in `.claude/skills/hallmark`) on its custom route. The decisions, waivers and the critique are recorded in the stamp at the top of `app/assets/css/main.css`. In short:
 
-- The ground runs from `#EC2B7A` to `#CEFF32` in OKLCH, so it passes through orange and yellow rather than grey. The pink holds for the first 16rem (`--ground-hold`) and the grain sits between the gradient and the content.
-- **White type only passes contrast on the pink end** (about 4:1 at #EC2B7A, about 1.2:1 at #CEFF32). White is used for the page titles in the pink hold; everything lower is ink, which passes at least 4.7:1 anywhere on the gradient.
-- Archivo, one family: 125% width at weight 900 for display, 100% width at 400 and 600 for text.
-- Ink inversion is the only signal: the current day, a pick and the primary action turn solid ink. A dashed frame means a clash.
+- The palette comes from a poster reference: flat wine `#63072C` for the ground, a hot pink `#E752A4` panel, cream `#F5F0EA` type, and a green sticker (`#A5D894` on `#275D33`). The grain sits between the ground and the content.
+- The home masthead is the poster's tilted pink panel: it bleeds off the right edge, its edges lean (`clip-path`), and the dates sit on a rotated mono sticker. The plan count in the band is the same sticker.
+- **Cream on the pink is display-only** (3.0:1, enough for the wordmark). Smaller text on the pink is deep wine `#2A0312` (5.5:1). Cream on the wine is 11.6:1; the timeline's cards and the inputs are cream with wine text.
+- Archivo, one family: 125% width at weight 900 for display, 100% width at 400 and 600 for text. IBM Plex Mono 500 for the stickers only.
+- Pink is the only signal: the current day, a pick and the primary action lift onto the pink. A dashed frame means a clash.
 
 Check the UI against Hallmark's gates:
 

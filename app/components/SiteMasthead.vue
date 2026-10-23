@@ -6,10 +6,13 @@ const screeningCount = screenings.length
 </script>
 
 <template>
-  <header v-if="full" class="wrap pt-10 pb-10">
+  <header v-if="full" class="masthead wrap">
     <h1 class="wordmark">
       Bandung World<br>Cinema
     </h1>
+    <p class="sticker mt-4">
+      14–21 Nov 2026
+    </p>
     <div class="facts mt-6">
       <p class="facts__lede">
         {{ screeningCount }} screenings of {{ filmCount }} films. Pick yours, then send them to Google Calendar.
