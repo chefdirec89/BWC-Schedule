@@ -56,6 +56,7 @@
   --radius-card: 0px;
   --radius-input: 0px;
   --radius-tag: 4px;
+  --radius-ticket: 20px;
   --radius-pill: 999px;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);

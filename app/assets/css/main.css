@@ -556,15 +556,84 @@
   /* A boxed row hangs its padding (and frame) into the gutter, so its columns stay on the grid. */
   .row--boxed { margin-inline: calc(-1 * var(--space-sm)); padding-inline: var(--space-sm); }
   .row.inverted { border-bottom-color: var(--color-accent); }
-  /* Dashed means a clash, here as on the timeline. */
-  .row--clash {
+  @media (min-width: 48rem) {
+    .row { grid-template-columns: 9rem minmax(0, 1fr) auto; align-items: start; }
+  }
+
+  /* My plan as time blocks: each day a ticket, the date on the pink tab, the day's screenings on the cream card. */
+  .tickets { display: grid; gap: var(--space-md); max-width: 60rem; margin: 0; padding: 0; list-style: none; }
+  .ticket {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "date weekday" "card card";
+    border-radius: var(--radius-ticket);
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
+  }
+  .ticket__date { grid-area: date; display: flex; align-items: baseline; gap: var(--space-xs); padding: var(--space-sm) var(--space-md); line-height: 1; }
+  .ticket__num { font-size: var(--text-display-s); font-weight: 900; font-stretch: 125%; font-variant-numeric: tabular-nums; }
+  .ticket__month { font-size: var(--text-xl); font-weight: 600; text-transform: uppercase; }
+  .ticket__weekday { grid-area: weekday; align-self: center; padding-inline: var(--space-md); font-weight: 600; }
+  .ticket__card {
+    grid-area: card;
+    position: relative;
+    margin: 0;
+    padding: var(--space-2xs) var(--space-md);
+    list-style: none;
+    border-radius: var(--radius-ticket);
+    background: var(--color-paper);
+    color: var(--color-paper-ink);
+  }
+  /* The notch: the tab points into its day. */
+  .ticket__card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: var(--space-xl);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid var(--color-accent-ink);
+  }
+  .ticket__card :focus-visible { outline-color: var(--color-paper-ink); }
+  .ticket__card .btn--quiet { color: var(--color-paper-ink); }
+  .ticket__card .btn--quiet:hover { background: var(--color-paper-2); }
+  @media (min-width: 40rem) {
+    .ticket { grid-template-columns: 8rem minmax(0, 1fr) 3.5rem; grid-template-areas: "date card weekday"; }
+    .ticket__date { flex-direction: column; align-items: center; justify-content: center; gap: var(--space-2xs); padding: var(--space-lg) var(--space-xs); }
+    .ticket__weekday { justify-self: center; padding: var(--space-md) 0; writing-mode: vertical-rl; transform: rotate(180deg); }
+    .ticket__card { padding-inline: var(--space-lg); }
+    .ticket__card::before {
+      top: 50%;
+      left: 0;
+      translate: 0 -50%;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 12px solid var(--color-accent-ink);
+      border-right: 0;
+    }
+  }
+  @media (min-width: 64rem) {
+    .ticket { grid-template-columns: 10rem minmax(0, 1fr) 4rem; }
+    .ticket__num { font-size: var(--text-display); }
+  }
+
+  .timeblock { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-sm) var(--gap-columns); padding-block: var(--space-md); }
+  .timeblock + .timeblock:not(.timeblock--clash) { border-top: var(--rule-hair) solid var(--color-paper-3); }
+  .timeblock__time { display: flex; align-items: center; gap: var(--space-xs); font-size: var(--text-sm); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .timeblock__title { margin-top: var(--space-2xs); font-size: var(--text-xl); }
+  .timeblock__link { color: inherit; text-decoration: none; }
+  .timeblock__link:hover { text-decoration: underline; text-decoration-thickness: var(--rule-hair); text-underline-offset: 0.18em; }
+  .timeblock__meta { margin-top: var(--space-2xs); color: var(--color-muted); font-size: var(--text-sm); }
+  /* Dashed means a clash, here as on the timeline; the frame hangs into the card's padding. */
+  .timeblock--clash {
     margin-block: var(--space-xs);
     margin-inline: calc(-1 * (var(--space-sm) + var(--rule-bold)));
     padding-inline: var(--space-sm);
-    border: var(--rule-bold) dashed var(--color-ink);
+    border: var(--rule-bold) dashed var(--color-paper-ink);
+    border-radius: calc(var(--radius-ticket) / 2);
   }
-  @media (min-width: 48rem) {
-    .row { grid-template-columns: 9rem minmax(0, 1fr) auto; align-items: start; }
+  @media (min-width: 64rem) {
+    .timeblock { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
   }
 
   .skeleton { background: var(--color-veil); }

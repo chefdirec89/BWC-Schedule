@@ -120,44 +120,54 @@ useSeoMeta({
           Google Calendar takes the .ics file under Settings, Import and export. Apple Calendar and Outlook open it directly.
         </p>
 
-        <section v-for="[day, list] in byDay" :key="day" class="mt-16" :aria-labelledby="`d-${day}`">
-          <h2 :id="`d-${day}`" class="min-w-0 text-section break-words">
-            {{ longDay(day) }}
-          </h2>
-          <ol class="rows mt-6">
-            <li v-for="s in list" :key="s.id" class="row" :class="{ 'row--clash': plan.clashesById.value.has(s.id) }">
-              <p class="num">
-                <time :datetime="`${s.date}T${s.start}`" class="block text-xl font-black [font-stretch:125%]">{{ s.start }}</time>
-                to {{ s.end }}
-              </p>
-              <div>
-                <h3>
-                  <NuxtLink :to="`/films/${s.filmId}`" class="textlink">
-                    {{ getFilm(s.filmId)!.title }}
-                  </NuxtLink>
-                </h3>
-                <p class="mt-1 text-sm">
-                  {{ listOf(getFilm(s.filmId)!.directors) }}<template v-if="subtitleLabel(s.subtitles)">
-                    <br>{{ subtitleLabel(s.subtitles) }}
-                  </template>
-                </p>
-                <p v-if="plan.clashesById.value.get(s.id)" class="mt-2 flex items-center gap-1 text-sm font-semibold">
-                  <AppIcon name="alert" :size="16" />
-                  Clashes with {{ plan.clashesById.value.get(s.id)!.map(c => `${getFilm(c.filmId)?.title} (${c.start})`).join(' and ') }}
-                </p>
-                <p v-else-if="(pickedFilmCounts.get(s.filmId) ?? 0) > 1" class="mt-2 text-sm font-semibold">
-                  You picked this film more than once.
-                </p>
-              </div>
-              <div class="row__actions">
-                <CalendarLink :screening="s" :film="getFilm(s.filmId)!" />
-                <button type="button" class="textlink" @click="plan.remove(s.id)">
-                  Remove<span class="sr-only">: {{ getFilm(s.filmId)!.title }}, {{ shortDay(s.date) }} {{ s.start }}</span>
-                </button>
-              </div>
-            </li>
-          </ol>
-        </section>
+        <!-- Each day is a ticket: the date on the pink tab, the day's screenings as time blocks on the card. -->
+        <ol class="tickets mt-16">
+          <li v-for="[day, list] in byDay" :key="day" class="ticket">
+            <h2 class="sr-only">
+              {{ longDay(day) }}
+            </h2>
+            <p class="ticket__date" aria-hidden="true">
+              <span class="ticket__num">{{ dayParts(day).day }}</span>
+              <span class="ticket__month">{{ dayParts(day).month }}</span>
+            </p>
+            <p class="ticket__weekday" aria-hidden="true">
+              {{ dayParts(day).weekdayLong }}
+            </p>
+            <ol class="ticket__card">
+              <li v-for="s in list" :key="s.id" class="timeblock" :class="{ 'timeblock--clash': plan.clashesById.value.has(s.id) }">
+                <div class="min-w-0">
+                  <p class="timeblock__time">
+                    <AppIcon name="clock" :size="16" />
+                    <span><time :datetime="`${s.date}T${s.start}`">{{ s.start }}</time> to {{ s.end }}</span>
+                  </p>
+                  <h3 class="timeblock__title">
+                    <NuxtLink :to="`/films/${s.filmId}`" class="timeblock__link">
+                      {{ getFilm(s.filmId)!.title }}
+                    </NuxtLink>
+                  </h3>
+                  <p class="timeblock__meta">
+                    {{ listOf(getFilm(s.filmId)!.directors) }}<template v-if="subtitleLabel(s.subtitles)">
+                      <br>{{ subtitleLabel(s.subtitles) }}
+                    </template>
+                  </p>
+                  <p v-if="plan.clashesById.value.get(s.id)" class="mt-2 flex items-center gap-1 text-sm font-semibold">
+                    <AppIcon name="alert" :size="16" />
+                    Clashes with {{ plan.clashesById.value.get(s.id)!.map(c => `${getFilm(c.filmId)?.title} (${c.start})`).join(' and ') }}
+                  </p>
+                  <p v-else-if="(pickedFilmCounts.get(s.filmId) ?? 0) > 1" class="mt-2 text-sm font-semibold">
+                    You picked this film more than once.
+                  </p>
+                </div>
+                <div class="row__actions">
+                  <CalendarLink :screening="s" :film="getFilm(s.filmId)!" />
+                  <button type="button" class="textlink" @click="plan.remove(s.id)">
+                    Remove<span class="sr-only">: {{ getFilm(s.filmId)!.title }}, {{ shortDay(s.date) }} {{ s.start }}</span>
+                  </button>
+                </div>
+              </li>
+            </ol>
+          </li>
+        </ol>
       </template>
 
       <section class="mt-24 border-t-2 border-ink pt-4" aria-labelledby="online-heading">
