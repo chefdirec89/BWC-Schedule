@@ -1,10 +1,14 @@
-// Turns the Jakarta World Cinema 2026 sheet into the Bandung schedule.
+// Turns the Jakarta World Cinema 2026 sheet into the Bandung schedule, then
+// overlays CGV Paris Van Java's own posted schedule where it's known.
 //
 //   npm run data
 //
-// The lineup is the same in both cities; only the dates move. Jakarta runs
-// Sat 31 Oct to Sat 7 Nov, Bandung runs Sat 14 Nov to Sat 21 Nov, so every
-// screening shifts by exactly 14 days and keeps its weekday and start time.
+// The lineup is mostly the same in both cities; by default a screening shifts
+// 14 days and keeps its weekday and start time. REAL_SOURCE holds the dates
+// Bandung has actually posted (per-hall, not a date shift): any Jakarta-shifted
+// screening landing on one of those dates is dropped and REAL_SOURCE's rows
+// stand in its place, halls and all. Later dates stay on the Jakarta shift
+// until the festival posts them too.
 // Jakarta-only details (CGV Grand Indonesia halls, Q&A guests, giveaways)
 // are kept under `source` for reference and are not shown as Bandung facts.
 
@@ -14,6 +18,8 @@ import { fileURLToPath } from 'node:url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const SOURCE = resolve(root, 'Jakarta World Cinema 2026 Schedule - @cinephileintern.xlsx - JWC.csv')
+const REAL_SOURCE = resolve(root, 'Bandung World Cinema 2026 Schedule - 14-17 Nov.csv')
+const REAL_DATES = ['2026-11-14', '2026-11-15', '2026-11-16', '2026-11-17']
 const OUTPUT = resolve(root, 'shared/data/festival.json')
 
 const DAY_OFFSET = 14
@@ -85,66 +91,85 @@ const pad = n => String(n).padStart(2, '0')
 const toMinutes = hhmm => { const [h, m] = hhmm.split(':').map(Number); return h * 60 + m }
 const toClock = mins => `${pad(Math.floor(mins / 60) % 24)}:${pad(mins % 60)}`
 
-function shiftDate(label) {
+function parseDateLabel(label) {
   // "Sat, 31 Oct 2026"
   const m = clean(label).match(/^(\w{3}), (\d{1,2}) (\w{3}) (\d{4})$/)
   if (!m) throw new Error(`Unreadable date: ${label}`)
-  const jakarta = new Date(Date.UTC(Number(m[4]), MONTHS[m[3]], Number(m[2])))
-  if (WEEKDAYS[jakarta.getUTCDay()] !== m[1]) throw new Error(`Weekday mismatch: ${label}`)
+  const d = new Date(Date.UTC(Number(m[4]), MONTHS[m[3]], Number(m[2])))
+  if (WEEKDAYS[d.getUTCDay()] !== m[1]) throw new Error(`Weekday mismatch: ${label}`)
+  return d
+}
+
+const iso = d => `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`
+
+function shiftDate(label) {
+  const jakarta = parseDateLabel(label)
   const bandung = new Date(jakarta.getTime() + DAY_OFFSET * 86_400_000)
-  const iso = d => `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())}`
   return { jakarta: iso(jakarta), bandung: iso(bandung) }
 }
 
-const rows = parseCsv(readFileSync(SOURCE, 'utf8'))
+/** A date already posted for Bandung: no shift, and there's no Jakarta date to credit. */
+function literalDate(label) {
+  return { jakarta: null, bandung: iso(parseDateLabel(label)) }
+}
+
 const films = new Map()
 const screenings = []
 const warnings = []
 
-for (const r of rows) {
-  if (!/^\d+$/.test(clean(r[0]))) continue
-  const [no, title, year, url, runtime, lbRating, director, country, genre, description, sub, date, start, finish, hall, remarks] = r.map(clean)
+function processRows(rows, { dates: resolveDates, label }) {
+  for (const r of rows) {
+    if (!/^\d+$/.test(clean(r[0]))) continue
+    const [no, title, year, url, runtime, lbRating, director, country, genre, description, sub, date, start, finish, hall, remarks] = r.map(clean)
 
-  const letterboxdUrl = url.startsWith('http') ? url : null
-  const filmKey = letterboxdUrl ?? title
-  if (!films.has(filmKey)) {
-    films.set(filmKey, {
-      id: slugify(title),
-      title,
-      year: /^\d{4}$/.test(year) ? Number(year) : null,
-      runtime: runtimeMinutes(runtime),
-      directors: list(director),
-      countries: list(country),
-      genres: list(genre),
-      synopsis: blank(description) ? '' : description,
-      letterboxdUrl,
-      letterboxdRating: rating(lbRating),
-      tmdbId: null,
+    const letterboxdUrl = url.startsWith('http') ? url : null
+    const filmKey = letterboxdUrl ?? title
+    if (!films.has(filmKey)) {
+      films.set(filmKey, {
+        id: slugify(title),
+        title,
+        year: /^\d{4}$/.test(year) ? Number(year) : null,
+        runtime: runtimeMinutes(runtime),
+        directors: list(director),
+        countries: list(country),
+        genres: list(genre),
+        synopsis: blank(description) ? '' : description,
+        letterboxdUrl,
+        letterboxdRating: rating(lbRating),
+        tmdbId: null,
+      })
+    }
+    const film = films.get(filmKey)
+
+    const dates = resolveDates(date)
+    const startMin = toMinutes(start)
+    const endMin = startMin + PRE_ADS_MINUTES + film.runtime
+    const end = toClock(endMin)
+    if (toMinutes(finish) !== endMin % (24 * 60)) warnings.push(`${label} row ${no} "${title}": sheet says it ends ${finish}, start + ads + runtime gives ${end}`)
+
+    // The closing film plays two halls at the same minute; both stay, so the
+    // second one takes a suffix.
+    let id = `${dates.bandung}-${start.replace(':', '')}-${film.id}`
+    for (let n = 2; screenings.some(s => s.id === id); n++) id = `${dates.bandung}-${start.replace(':', '')}-${film.id}-${n}`
+
+    screenings.push({
+      id,
+      filmId: film.id,
+      date: dates.bandung,
+      start,
+      end,
+      subtitles: subtitles(sub),
+      source: { row: Number(no), date: dates.jakarta, hall: hall || null, remarks: remarks || null },
     })
   }
-  const film = films.get(filmKey)
-
-  const dates = shiftDate(date)
-  const startMin = toMinutes(start)
-  const endMin = startMin + PRE_ADS_MINUTES + film.runtime
-  const end = toClock(endMin)
-  if (toMinutes(finish) !== endMin % (24 * 60)) warnings.push(`Row ${no} "${title}": sheet says it ends ${finish}, start + ads + runtime gives ${end}`)
-
-  // The closing film plays two halls at the same minute; both stay, so the
-  // second one takes a suffix.
-  let id = `${dates.bandung}-${start.replace(':', '')}-${film.id}`
-  for (let n = 2; screenings.some(s => s.id === id); n++) id = `${dates.bandung}-${start.replace(':', '')}-${film.id}-${n}`
-
-  screenings.push({
-    id,
-    filmId: film.id,
-    date: dates.bandung,
-    start,
-    end,
-    subtitles: subtitles(sub),
-    source: { row: Number(no), date: dates.jakarta, hall: hall || null, remarks: remarks || null },
-  })
 }
+
+processRows(parseCsv(readFileSync(SOURCE, 'utf8')), { dates: shiftDate, label: 'Jakarta sheet' })
+// The dates CGV Paris Van Java has actually posted replace their Jakarta-shifted guesses.
+for (let i = screenings.length - 1; i >= 0; i--) {
+  if (REAL_DATES.includes(screenings[i].date)) screenings.splice(i, 1)
+}
+processRows(parseCsv(readFileSync(REAL_SOURCE, 'utf8')), { dates: literalDate, label: 'Bandung sheet' })
 
 const ids = new Set()
 for (const f of films.values()) {
@@ -159,7 +184,8 @@ const filmList = [...films.values()].sort((a, b) => a.title.localeCompare(b.titl
 
 mkdirSync(dirname(OUTPUT), { recursive: true })
 writeFileSync(OUTPUT, `${JSON.stringify({
-  source: 'Jakarta World Cinema 2026 schedule sheet by @cinephileintern (KlikFilm App & IG/jakartaworldcinema)',
+  source: 'Jakarta World Cinema 2026 schedule sheet by @cinephileintern (KlikFilm App & IG/jakartaworldcinema), '
+    + `moved two weeks later to Bandung, except ${REAL_DATES[0]} to ${REAL_DATES.at(-1)} which follow CGV Paris Van Java's own posted schedule`,
   dayOffset: DAY_OFFSET,
   films: filmList,
   screenings,

@@ -55,7 +55,7 @@ useSeoMeta({
             {{ duration(f.runtime) }}
           </td>
           <td class="num text-sm">
-            {{ counts.get(f.id) }}<span class="ledger__unit">{{ counts.get(f.id) === 1 ? ' screening' : ' screenings' }}</span>
+            {{ counts.get(f.id) ?? 0 }}<span class="ledger__unit">{{ counts.get(f.id) === 1 ? ' screening' : ' screenings' }}</span>
           </td>
         </tr>
       </tbody>
