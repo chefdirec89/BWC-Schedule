@@ -5,9 +5,9 @@
     </p>
     <div class="footer__notes mt-6">
       <p>
-        14 to 17 November follow CGV Paris Van Java's own posted schedule. The rest come from the Jakarta World
-        Cinema 2026 schedule sheet by @cinephileintern (sources: the KlikFilm app and @jakartaworldcinema), moved
-        two weeks later to Bandung, until the festival posts those days too.
+        Dates, times and halls follow CGV Paris Van Java's own posted schedule. Director, country, genre and
+        Letterboxd rating are carried over from the Jakarta World Cinema 2026 schedule sheet by @cinephileintern
+        (sources: the KlikFilm app and @jakartaworldcinema) for films that also played Jakarta.
         Check times with the festival before you set off.
       </p>
       <p>

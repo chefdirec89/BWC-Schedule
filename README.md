@@ -27,7 +27,7 @@ server/
   api/films/[id]/media.get.ts   TMDB poster/backdrop/overview, key stays server-side
   utils/tmdb.ts                 lookup + 24h cache
 shared/              code used by both app and server (auto-imported)
-  data/festival.json            generated: 110 films, 167 screenings
+  data/festival.json            generated: see the film/screening counts `npm run data` prints
   utils/                        festival constants, time maths, clash detection, Google Calendar + .ics
 scripts/build-schedule.mjs      two CSVs -> shared/data/festival.json
 ```
@@ -36,14 +36,14 @@ scripts/build-schedule.mjs      two CSVs -> shared/data/festival.json
 
 `npm run data` rebuilds `shared/data/festival.json` from two sheets:
 
-- `Jakarta World Cinema 2026 Schedule - @cinephileintern.xlsx - JWC.csv` — the full Jakarta lineup. **Dates:** Jakarta runs Sat 31 Oct to Sat 7 Nov; by default a screening shifts 14 days and keeps its weekday and start time, landing on Bandung's Sat 14 Nov to Sat 21 Nov.
-- `Bandung World Cinema 2026 Schedule - 14-17 Nov.csv` — CGV Paris Van Java's own posted schedule for 14 to 17 November (same column shape, dates already Bandung's, no shift). Any Jakarta-shifted screening landing on one of those four dates is dropped first; this sheet's rows, halls included, stand in for it. Nov 18–21 still follow the Jakarta shift until the festival posts those days too. A handful of Jakarta-catalogue films whose only shifted screenings fell in that window aren't in the real sheet and so end up with no Bandung screening at all — that reflects what's posted, not a bug.
-- **End times** are computed as start + 10 min of pre-show ads + runtime, for both sheets. The Jakarta sheet's own end time for *Queen at Sea* (row 131) is wrong (14:24; it should be 14:51); the script prints a note.
-- **Not shown as Bandung facts (Jakarta rows only):** CGV Grand Indonesia hall numbers, Jakarta Q&A guests and giveaways. They stay in each screening's `source` field, which is `null` for a screening that came from the Bandung sheet instead.
+- `Bandung World Cinema 2026 Schedule.csv` — CGV Paris Van Java's own posted schedule for all eight days, 14 to 21 November, same column shape as the Jakarta sheet below. This is the only source of screenings: its dates, halls and running order are used as posted, with no shift from Jakarta's.
+- `Jakarta World Cinema 2026 Schedule - @cinephileintern.xlsx - JWC.csv` — used only as a catalogue now, not for dates or halls. When a Bandung row's title matches a Jakarta film, its director, country, genre, synopsis, year and Letterboxd rating are carried over; a title with no match (an "In Conversation With" panel, a surprise-film slot, a local title Jakarta didn't carry) gets a bare entry with just what the Bandung sheet gives.
+- A Jakarta-catalogue film that never turns up in the Bandung sheet doesn't get a page: `filmList` keeps only films with at least one Bandung screening.
+- **End times** are computed as start + 10 min of pre-show ads + runtime. The Jakarta sheet's own end time for *Queen at Sea* (row 131) is wrong (14:24; it should be 14:51) — harmless now since that row no longer contributes a screening, but the script still prints the note for any such mismatch in the Bandung sheet.
 - **Repaired:** one title in the Jakarta CSV (*Aquí*) was saved through the wrong encoding; the script fixes it without touching the CSV.
-- Two screenings of the closing film *Inherit* start at the same minute in different halls; both are kept.
+- Several screenings of the closing film *Inherit* start at the same minute in different halls; all are kept, with a suffix on the id.
 
-When the festival publishes Bandung times for 18–21 November, add those rows to the Bandung sheet (or a new one) and extend `REAL_DATES` in the script, then run `npm run data`. Once every date has a real sheet, the Jakarta CSV and the shift step can go.
+When the festival revises a date, edit `Bandung World Cinema 2026 Schedule.csv` directly (or regenerate it) and run `npm run data`.
 
 ## TMDB
 

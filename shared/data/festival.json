@@ -1,6 +1,5 @@
 {
-  "source": "Jakarta World Cinema 2026 schedule sheet by @cinephileintern (KlikFilm App & IG/jakartaworldcinema), moved two weeks later to Bandung, except 2026-11-14 to 2026-11-17 which follow CGV Paris Van Java's own posted schedule",
-  "dayOffset": 14,
+  "source": "CGV Paris Van Java's own posted schedule, 14 to 21 November 2026; director, country, genre, synopsis, year and Letterboxd rating carried over from the Jakarta World Cinema 2026 schedule sheet by @cinephileintern (KlikFilm App & IG/jakartaworldcinema) where a film played both cities",
   "films": [
     {
       "id": "17",
@@ -318,26 +317,6 @@
       "tmdbId": null
     },
     {
-      "id": "club-kid",
-      "title": "Club Kid",
-      "year": 2026,
-      "runtime": 126,
-      "directors": [
-        "Jordan Firstman"
-      ],
-      "countries": [
-        "USA"
-      ],
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "synopsis": "A hard-partying New York City club promoter sees his whirlwind lifestyle upended by the arrival of the 10-year-old son he never knew he had.",
-      "letterboxdUrl": "https://boxd.it/Z6lK",
-      "letterboxdRating": 4.3,
-      "tmdbId": null
-    },
-    {
       "id": "death-has-no-master",
       "title": "Death Has No Master",
       "year": 2026,
@@ -629,25 +608,6 @@
       "tmdbId": null
     },
     {
-      "id": "happy-old-year",
-      "title": "Happy Old Year",
-      "year": 2019,
-      "runtime": 117,
-      "directors": [
-        "Nawapol Thamrongrattanarit"
-      ],
-      "countries": [
-        "Thailand"
-      ],
-      "genres": [
-        "Drama"
-      ],
-      "synopsis": "While decluttering her home, a woman’s hefty house renovation leads her back to the past when she uncovers her ex-boyfriend’s belongings.",
-      "letterboxdUrl": "https://boxd.it/nglu",
-      "letterboxdRating": 3.9,
-      "tmdbId": null
-    },
-    {
       "id": "heysel-85",
       "title": "Heysel 85",
       "year": 2026,
@@ -798,6 +758,19 @@
       "tmdbId": null
     },
     {
+      "id": "in-conversation-with-3",
+      "title": "In Conversation With #3",
+      "year": null,
+      "runtime": 120,
+      "directors": [],
+      "countries": [],
+      "genres": [],
+      "synopsis": "",
+      "letterboxdUrl": null,
+      "letterboxdRating": null,
+      "tmdbId": null
+    },
+    {
       "id": "inherit",
       "title": "Inherit",
       "year": 2026,
@@ -923,19 +896,6 @@
       "tmdbId": null
     },
     {
-      "id": "klikfilm-masterclass-tudor-vladimir-panduru-cinematographer-of-fjord",
-      "title": "KlikFilm Masterclass: Tudor Vladimir Panduru (Cinematographer of Fjord)",
-      "year": 2026,
-      "runtime": 90,
-      "directors": [],
-      "countries": [],
-      "genres": [],
-      "synopsis": "KlikFilm Masterclass",
-      "letterboxdUrl": null,
-      "letterboxdRating": null,
-      "tmdbId": null
-    },
-    {
       "id": "klikfilm-short-movie-competition-2026-winner",
       "title": "KlikFilm Short Movie Competition 2026 Winner",
       "year": null,
@@ -946,28 +906,6 @@
       "synopsis": "",
       "letterboxdUrl": null,
       "letterboxdRating": null,
-      "tmdbId": null
-    },
-    {
-      "id": "la-bola-negra",
-      "title": "La Bola Negra",
-      "year": 2026,
-      "runtime": 155,
-      "directors": [
-        "Javier Ambrossi",
-        "Javier Calvo"
-      ],
-      "countries": [
-        "Spain",
-        "France"
-      ],
-      "genres": [
-        "Drama",
-        "War"
-      ],
-      "synopsis": "The intertwined lives of three men in three different eras, three lives intimately linked by sexuality and desire, pain, and legacy.",
-      "letterboxdUrl": "https://boxd.it/SDaQ",
-      "letterboxdRating": 4.4,
       "tmdbId": null
     },
     {
@@ -1544,27 +1482,6 @@
       "tmdbId": null
     },
     {
-      "id": "saccharine",
-      "title": "Saccharine",
-      "year": 2026,
-      "runtime": 113,
-      "directors": [
-        "Natalie Erika James"
-      ],
-      "countries": [
-        "Australia",
-        "Finland",
-        "USA"
-      ],
-      "genres": [
-        "Horror"
-      ],
-      "synopsis": "After succumbing to an obscure weight-loss craze involving the eating of human ashes, lovelorn medical student Hana finds herself haunted by the ghost of the person she’s eating.",
-      "letterboxdUrl": "https://boxd.it/Qttk",
-      "letterboxdRating": 3,
-      "tmdbId": null
-    },
-    {
       "id": "sad-girlz",
       "title": "Sad Girlz",
       "year": 2026,
@@ -1914,27 +1831,6 @@
       "tmdbId": null
     },
     {
-      "id": "the-invisible-guest",
-      "title": "The Invisible Guest",
-      "year": 2026,
-      "runtime": 121,
-      "directors": [
-        "Danial Rifki"
-      ],
-      "countries": [
-        "Indonesia"
-      ],
-      "genres": [
-        "Drama",
-        "Thriller",
-        "Mystery"
-      ],
-      "synopsis": "Accused of murdering her lover, a young businesswoman hires a brilliant lawyer. With only three hours left, they must uncover what really happened.",
-      "letterboxdUrl": "https://boxd.it/E3JM",
-      "letterboxdRating": 3.4,
-      "tmdbId": null
-    },
-    {
       "id": "the-loneliest-man-in-town",
       "title": "The Loneliest Man in Town",
       "year": 2026,
@@ -1952,26 +1848,6 @@
       ],
       "synopsis": "Blues musician Al Cook lives in an apartment filled with memories. Outside, the world carries on without him. But when his home is slated for demolition, out of the ruins of his existence, a long-forgotten dream suddenly resurfaces.",
       "letterboxdUrl": "https://boxd.it/SO9a",
-      "letterboxdRating": 3.7,
-      "tmdbId": null
-    },
-    {
-      "id": "the-rays-and-shadows",
-      "title": "The Rays and Shadows",
-      "year": 2026,
-      "runtime": 199,
-      "directors": [
-        "Xavier Giannoli"
-      ],
-      "countries": [
-        "France"
-      ],
-      "genres": [
-        "Drama",
-        "History"
-      ],
-      "synopsis": "Jean and Otto, a French newspaperman and a young German Francophile, are fighting for peace in Europe. Jean’s daughter, Corinne, is launching a brilliant acting career in the film world, but war breaks out and France is occupied. The two friends have a major role to play in this new France. Jean becomes a big press baron and an ardent advocate of collaboration with the occupying forces, while Otto becomes the Reich’s ambassador in Paris.",
-      "letterboxdUrl": "https://boxd.it/OiWm",
       "letterboxdRating": 3.7,
       "tmdbId": null
     },
@@ -2292,7 +2168,6 @@
       "subtitles": "id",
       "source": {
         "row": 1,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2306,7 +2181,6 @@
       "subtitles": "en",
       "source": {
         "row": 2,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "17+"
       }
@@ -2320,7 +2194,6 @@
       "subtitles": "id",
       "source": {
         "row": 3,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2334,7 +2207,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 4,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -2348,7 +2220,6 @@
       "subtitles": "id",
       "source": {
         "row": 5,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -2362,7 +2233,6 @@
       "subtitles": "id",
       "source": {
         "row": 6,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -2376,7 +2246,6 @@
       "subtitles": "en",
       "source": {
         "row": 7,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "17+"
       }
@@ -2390,7 +2259,6 @@
       "subtitles": "id",
       "source": {
         "row": 8,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2404,7 +2272,6 @@
       "subtitles": "id",
       "source": {
         "row": 9,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -2418,7 +2285,6 @@
       "subtitles": "id",
       "source": {
         "row": 10,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -2432,7 +2298,6 @@
       "subtitles": "id",
       "source": {
         "row": 11,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -2446,7 +2311,6 @@
       "subtitles": "id",
       "source": {
         "row": 12,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -2460,7 +2324,6 @@
       "subtitles": "id",
       "source": {
         "row": 13,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2474,7 +2337,6 @@
       "subtitles": "id",
       "source": {
         "row": 14,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "17+"
       }
@@ -2488,7 +2350,6 @@
       "subtitles": "id",
       "source": {
         "row": 15,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -2502,7 +2363,6 @@
       "subtitles": "id",
       "source": {
         "row": 16,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -2516,7 +2376,6 @@
       "subtitles": "id",
       "source": {
         "row": 17,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -2530,7 +2389,6 @@
       "subtitles": "id",
       "source": {
         "row": 18,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "17+"
       }
@@ -2544,7 +2402,6 @@
       "subtitles": "id",
       "source": {
         "row": 19,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2558,7 +2415,6 @@
       "subtitles": "id",
       "source": {
         "row": 20,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -2572,7 +2428,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 21,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -2586,7 +2441,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 22,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2600,7 +2454,6 @@
       "subtitles": "id",
       "source": {
         "row": 23,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2614,7 +2467,6 @@
       "subtitles": "id",
       "source": {
         "row": 24,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -2628,7 +2480,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 25,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -2642,7 +2493,6 @@
       "subtitles": null,
       "source": {
         "row": 26,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "21+"
       }
@@ -2656,7 +2506,6 @@
       "subtitles": "id",
       "source": {
         "row": 27,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "21+"
       }
@@ -2670,7 +2519,6 @@
       "subtitles": "id",
       "source": {
         "row": 28,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2684,7 +2532,6 @@
       "subtitles": null,
       "source": {
         "row": 29,
-        "date": null,
         "hall": "Audi 9",
         "remarks": null
       }
@@ -2698,7 +2545,6 @@
       "subtitles": "id",
       "source": {
         "row": 30,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "21+"
       }
@@ -2712,7 +2558,6 @@
       "subtitles": "id",
       "source": {
         "row": 31,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -2726,7 +2571,6 @@
       "subtitles": "id",
       "source": {
         "row": 32,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2740,7 +2584,6 @@
       "subtitles": null,
       "source": {
         "row": 33,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -2754,7 +2597,6 @@
       "subtitles": "id",
       "source": {
         "row": 34,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -2768,7 +2610,6 @@
       "subtitles": "en",
       "source": {
         "row": 35,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2782,7 +2623,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 36,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "21+"
       }
@@ -2796,7 +2636,6 @@
       "subtitles": "id",
       "source": {
         "row": 37,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -2810,7 +2649,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 38,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -2824,7 +2662,6 @@
       "subtitles": "id",
       "source": {
         "row": 39,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -2838,7 +2675,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 40,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -2852,7 +2688,6 @@
       "subtitles": null,
       "source": {
         "row": 41,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -2866,7 +2701,6 @@
       "subtitles": "id",
       "source": {
         "row": 42,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "13+"
       }
@@ -2880,7 +2714,6 @@
       "subtitles": "id",
       "source": {
         "row": 43,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "13+"
       }
@@ -2894,7 +2727,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 44,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -2908,7 +2740,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 45,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -2922,7 +2753,6 @@
       "subtitles": "id",
       "source": {
         "row": 46,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -2936,7 +2766,6 @@
       "subtitles": "id",
       "source": {
         "row": 47,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "21+"
       }
@@ -2950,7 +2779,6 @@
       "subtitles": "id",
       "source": {
         "row": 48,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "21+"
       }
@@ -2964,7 +2792,6 @@
       "subtitles": "id",
       "source": {
         "row": 49,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "13+"
       }
@@ -2978,7 +2805,6 @@
       "subtitles": "id",
       "source": {
         "row": 50,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -2992,7 +2818,6 @@
       "subtitles": "id",
       "source": {
         "row": 51,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "13+"
       }
@@ -3006,7 +2831,6 @@
       "subtitles": "id",
       "source": {
         "row": 52,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -3020,7 +2844,6 @@
       "subtitles": "id",
       "source": {
         "row": 53,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -3034,7 +2857,6 @@
       "subtitles": "id",
       "source": {
         "row": 54,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -3048,7 +2870,6 @@
       "subtitles": "id",
       "source": {
         "row": 55,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -3062,7 +2883,6 @@
       "subtitles": "id",
       "source": {
         "row": 56,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "17+"
       }
@@ -3076,7 +2896,6 @@
       "subtitles": null,
       "source": {
         "row": 57,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "21+"
       }
@@ -3090,7 +2909,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 58,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -3104,7 +2922,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 59,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -3118,7 +2935,6 @@
       "subtitles": "id",
       "source": {
         "row": 60,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "17+"
       }
@@ -3132,7 +2948,6 @@
       "subtitles": "id",
       "source": {
         "row": 61,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -3146,7 +2961,6 @@
       "subtitles": "id",
       "source": {
         "row": 62,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "21+"
       }
@@ -3160,7 +2974,6 @@
       "subtitles": null,
       "source": {
         "row": 63,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -3174,7 +2987,6 @@
       "subtitles": "id",
       "source": {
         "row": 64,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "13+"
       }
@@ -3188,7 +3000,6 @@
       "subtitles": null,
       "source": {
         "row": 65,
-        "date": null,
         "hall": "Audi 7",
         "remarks": null
       }
@@ -3202,7 +3013,6 @@
       "subtitles": "id",
       "source": {
         "row": 66,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "17+"
       }
@@ -3216,7 +3026,6 @@
       "subtitles": "id",
       "source": {
         "row": 67,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -3230,7 +3039,6 @@
       "subtitles": "id",
       "source": {
         "row": 68,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -3244,7 +3052,6 @@
       "subtitles": null,
       "source": {
         "row": 69,
-        "date": null,
         "hall": "Audi 9",
         "remarks": null
       }
@@ -3258,7 +3065,6 @@
       "subtitles": "id",
       "source": {
         "row": 70,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "17+"
       }
@@ -3272,7 +3078,6 @@
       "subtitles": "id",
       "source": {
         "row": 71,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -3286,7 +3091,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 72,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "21+"
       }
@@ -3300,7 +3104,6 @@
       "subtitles": null,
       "source": {
         "row": 73,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "17+"
       }
@@ -3314,7 +3117,6 @@
       "subtitles": "id",
       "source": {
         "row": 74,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -3328,7 +3130,6 @@
       "subtitles": "id",
       "source": {
         "row": 75,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -3342,7 +3143,6 @@
       "subtitles": "id",
       "source": {
         "row": 76,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "17+"
       }
@@ -3356,7 +3156,6 @@
       "subtitles": "id",
       "source": {
         "row": 77,
-        "date": null,
         "hall": "Audi 7",
         "remarks": "13+"
       }
@@ -3370,7 +3169,6 @@
       "subtitles": "id",
       "source": {
         "row": 78,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "13+"
       }
@@ -3384,7 +3182,6 @@
       "subtitles": "id-en",
       "source": {
         "row": 79,
-        "date": null,
         "hall": "Audi 4",
         "remarks": "17+"
       }
@@ -3398,7 +3195,6 @@
       "subtitles": "id",
       "source": {
         "row": 80,
-        "date": null,
         "hall": "Audi 9",
         "remarks": "17+"
       }
@@ -3412,7 +3208,6 @@
       "subtitles": "id",
       "source": {
         "row": 81,
-        "date": null,
         "hall": "Audi 6",
         "remarks": "21+"
       }
@@ -3426,7 +3221,6 @@
       "subtitles": "en",
       "source": {
         "row": 82,
-        "date": null,
         "hall": "Audi 8",
         "remarks": "17+"
       }
@@ -3439,10 +3233,9 @@
       "end": "12:41",
       "subtitles": "id",
       "source": {
-        "row": 87,
-        "date": "2026-11-04",
-        "hall": "Audi 11",
-        "remarks": null
+        "row": 83,
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     },
     {
@@ -3453,38 +3246,9 @@
       "end": "14:56",
       "subtitles": "id-en",
       "source": {
-        "row": 88,
-        "date": "2026-11-04",
+        "row": 84,
         "hall": "Audi 7",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-18-1300-madame",
-      "filmId": "madame",
-      "date": "2026-11-18",
-      "start": "13:00",
-      "end": "14:37",
-      "subtitles": "id",
-      "source": {
-        "row": 89,
-        "date": "2026-11-04",
-        "hall": "Audi 3",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-18-1300-prosecution",
-      "filmId": "prosecution",
-      "date": "2026-11-18",
-      "start": "13:00",
-      "end": "15:03",
-      "subtitles": "id",
-      "source": {
-        "row": 90,
-        "date": "2026-11-04",
-        "hall": "Audi 6",
-        "remarks": "with QnA"
+        "remarks": "17+"
       }
     },
     {
@@ -3495,10 +3259,9 @@
       "end": "15:04",
       "subtitles": "id",
       "source": {
-        "row": 91,
-        "date": "2026-11-04",
-        "hall": "Audi 11",
-        "remarks": null
+        "row": 85,
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     },
     {
@@ -3507,26 +3270,63 @@
       "date": "2026-11-18",
       "start": "13:00",
       "end": "15:14",
-      "subtitles": null,
+      "subtitles": "id",
       "source": {
-        "row": 92,
-        "date": "2026-11-04",
+        "row": 86,
         "hall": "Audi 4",
-        "remarks": null
+        "remarks": "21+"
       }
     },
     {
-      "id": "2026-11-18-1455-everytime",
-      "filmId": "everytime",
+      "id": "2026-11-18-1305-madame",
+      "filmId": "madame",
       "date": "2026-11-18",
-      "start": "14:55",
-      "end": "16:55",
+      "start": "13:05",
+      "end": "14:42",
       "subtitles": "id",
       "source": {
-        "row": 93,
-        "date": "2026-11-04",
-        "hall": "Audi 3",
-        "remarks": null
+        "row": 87,
+        "hall": "Audi 9",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-18-1310-heysel-85",
+      "filmId": "heysel-85",
+      "date": "2026-11-18",
+      "start": "13:10",
+      "end": "14:51",
+      "subtitles": "id",
+      "source": {
+        "row": 88,
+        "hall": "Audi 6",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-18-1500-everytime",
+      "filmId": "everytime",
+      "date": "2026-11-18",
+      "start": "15:00",
+      "end": "17:00",
+      "subtitles": "id",
+      "source": {
+        "row": 89,
+        "hall": "Audi 9",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-18-1510-narciso",
+      "filmId": "narciso",
+      "date": "2026-11-18",
+      "start": "15:10",
+      "end": "17:01",
+      "subtitles": "id",
+      "source": {
+        "row": 90,
+        "hall": "Audi 6",
+        "remarks": "21+"
       }
     },
     {
@@ -3537,10 +3337,9 @@
       "end": "17:13",
       "subtitles": "id",
       "source": {
-        "row": 94,
-        "date": "2026-11-04",
+        "row": 91,
         "hall": "Audi 7",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
@@ -3551,10 +3350,9 @@
       "end": "17:26",
       "subtitles": null,
       "source": {
-        "row": 95,
-        "date": "2026-11-04",
-        "hall": "Audi 11",
-        "remarks": null
+        "row": 92,
+        "hall": "Audi 8",
+        "remarks": "21+"
       }
     },
     {
@@ -3565,66 +3363,61 @@
       "end": "17:25",
       "subtitles": "id",
       "source": {
-        "row": 96,
-        "date": "2026-11-04",
+        "row": 93,
         "hall": "Audi 4",
-        "remarks": null
+        "remarks": "13+"
       }
     },
     {
-      "id": "2026-11-18-1555-heysel-85",
-      "filmId": "heysel-85",
-      "date": "2026-11-18",
-      "start": "15:55",
-      "end": "17:36",
-      "subtitles": "id",
-      "source": {
-        "row": 97,
-        "date": "2026-11-04",
-        "hall": "Audi 6",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-18-1720-birds-of-war",
-      "filmId": "birds-of-war",
+      "id": "2026-11-18-1720-shame-and-money",
+      "filmId": "shame-and-money",
       "date": "2026-11-18",
       "start": "17:20",
-      "end": "18:55",
+      "end": "19:39",
       "subtitles": "id",
       "source": {
-        "row": 98,
-        "date": "2026-11-04",
-        "hall": "Audi 3",
-        "remarks": null
+        "row": 94,
+        "hall": "Audi 6",
+        "remarks": "13+"
       }
     },
     {
-      "id": "2026-11-18-1730-orange-flavoured-wedding",
-      "filmId": "orange-flavoured-wedding",
+      "id": "2026-11-18-1730-birds-of-war",
+      "filmId": "birds-of-war",
       "date": "2026-11-18",
       "start": "17:30",
-      "end": "19:35",
-      "subtitles": "id-en",
+      "end": "19:05",
+      "subtitles": "id",
       "source": {
-        "row": 99,
-        "date": "2026-11-04",
-        "hall": "Audi 7",
-        "remarks": null
+        "row": 95,
+        "hall": "Audi 9",
+        "remarks": "13+"
       }
     },
     {
-      "id": "2026-11-18-1735-club-kid",
-      "filmId": "club-kid",
+      "id": "2026-11-18-1730-the-station",
+      "filmId": "the-station",
       "date": "2026-11-18",
-      "start": "17:35",
-      "end": "19:51",
-      "subtitles": null,
+      "start": "17:30",
+      "end": "19:32",
+      "subtitles": "id",
       "source": {
-        "row": 100,
-        "date": "2026-11-04",
+        "row": 96,
+        "hall": "Audi 7",
+        "remarks": "13+"
+      }
+    },
+    {
+      "id": "2026-11-18-1740-fjord",
+      "filmId": "fjord",
+      "date": "2026-11-18",
+      "start": "17:40",
+      "end": "20:16",
+      "subtitles": "id-en",
+      "source": {
+        "row": 97,
         "hall": "Audi 4",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
@@ -3633,40 +3426,11 @@
       "date": "2026-11-18",
       "start": "17:45",
       "end": "19:29",
-      "subtitles": "id",
-      "source": {
-        "row": 101,
-        "date": "2026-11-04",
-        "hall": "Audi 11",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-18-1755-narciso",
-      "filmId": "narciso",
-      "date": "2026-11-18",
-      "start": "17:55",
-      "end": "19:46",
-      "subtitles": "id",
-      "source": {
-        "row": 102,
-        "date": "2026-11-04",
-        "hall": "Audi 6",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-18-1910-the-beloved",
-      "filmId": "the-beloved",
-      "date": "2026-11-18",
-      "start": "19:10",
-      "end": "21:35",
       "subtitles": "id-en",
       "source": {
-        "row": 103,
-        "date": "2026-11-04",
-        "hall": "Audi 3",
-        "remarks": null
+        "row": 98,
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     },
     {
@@ -3677,52 +3441,35 @@
       "end": "22:22",
       "subtitles": "id-en",
       "source": {
-        "row": 104,
-        "date": "2026-11-04",
-        "hall": "Audi 11",
-        "remarks": null
+        "row": 99,
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-18-1950-the-station",
-      "filmId": "the-station",
+      "id": "2026-11-18-1950-the-education-of-jane-cumming",
+      "filmId": "the-education-of-jane-cumming",
       "date": "2026-11-18",
       "start": "19:50",
-      "end": "21:52",
+      "end": "21:54",
       "subtitles": "id",
       "source": {
-        "row": 105,
-        "date": "2026-11-04",
+        "row": 100,
         "hall": "Audi 7",
-        "remarks": null
+        "remarks": "21+"
       }
     },
     {
-      "id": "2026-11-18-2005-fjord",
-      "filmId": "fjord",
+      "id": "2026-11-18-1955-nirvanna-the-band-the-show-the-movie",
+      "filmId": "nirvanna-the-band-the-show-the-movie",
       "date": "2026-11-18",
-      "start": "20:05",
-      "end": "22:41",
-      "subtitles": "id-en",
-      "source": {
-        "row": 106,
-        "date": "2026-11-04",
-        "hall": "Audi 4",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-18-2005-shame-and-money",
-      "filmId": "shame-and-money",
-      "date": "2026-11-18",
-      "start": "20:05",
-      "end": "22:24",
+      "start": "19:55",
+      "end": "21:45",
       "subtitles": "id",
       "source": {
-        "row": 107,
-        "date": "2026-11-04",
+        "row": 101,
         "hall": "Audi 6",
-        "remarks": null
+        "remarks": "13+"
       }
     },
     {
@@ -3733,9 +3480,21 @@
       "end": "12:35",
       "subtitles": "en",
       "source": {
-        "row": 108,
-        "date": "2026-11-05",
-        "hall": "Audi 11",
+        "row": 102,
+        "hall": "Audi 8",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-19-1230-the-cycle-of-love",
+      "filmId": "the-cycle-of-love",
+      "date": "2026-11-19",
+      "start": "12:30",
+      "end": "14:18",
+      "subtitles": "id",
+      "source": {
+        "row": 103,
+        "hall": "Audi 9",
         "remarks": null
       }
     },
@@ -3747,10 +3506,9 @@
       "end": "15:15",
       "subtitles": "id",
       "source": {
-        "row": 109,
-        "date": "2026-11-05",
-        "hall": "Audi 11",
-        "remarks": "with QnA"
+        "row": 104,
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     },
     {
@@ -3761,262 +3519,191 @@
       "end": "14:58",
       "subtitles": null,
       "source": {
-        "row": 110,
-        "date": "2026-11-05",
+        "row": 105,
         "hall": "Audi 6",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-19-1300-sheep-in-the-box",
+      "id": "2026-11-19-1300-the-birthday-party",
+      "filmId": "the-birthday-party",
+      "date": "2026-11-19",
+      "start": "13:00",
+      "end": "15:04",
+      "subtitles": "id",
+      "source": {
+        "row": 106,
+        "hall": "Audi 4",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-19-1305-sheep-in-the-box",
       "filmId": "sheep-in-the-box",
       "date": "2026-11-19",
-      "start": "13:00",
-      "end": "15:16",
+      "start": "13:05",
+      "end": "15:21",
       "subtitles": "id",
       "source": {
-        "row": 111,
-        "date": "2026-11-05",
+        "row": 107,
         "hall": "Audi 7",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-19-1300-the-cycle-of-love",
-      "filmId": "the-cycle-of-love",
+      "id": "2026-11-19-1500-in-conversation-with-3",
+      "filmId": "in-conversation-with-3",
       "date": "2026-11-19",
-      "start": "13:00",
-      "end": "14:48",
-      "subtitles": "id",
-      "source": {
-        "row": 113,
-        "date": "2026-11-05",
-        "hall": "Audi 3",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-19-1300-woman-unknown",
-      "filmId": "woman-unknown",
-      "date": "2026-11-19",
-      "start": "13:00",
-      "end": "15:14",
+      "start": "15:00",
+      "end": "17:10",
       "subtitles": null,
       "source": {
-        "row": 112,
-        "date": "2026-11-05",
-        "hall": "Audi 4",
+        "row": 108,
+        "hall": "Audi 9",
         "remarks": null
       }
     },
     {
-      "id": "2026-11-19-1505-four-minus-three",
-      "filmId": "four-minus-three",
-      "date": "2026-11-19",
-      "start": "15:05",
-      "end": "17:16",
-      "subtitles": "id",
-      "source": {
-        "row": 114,
-        "date": "2026-11-05",
-        "hall": "Audi 3",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-19-1515-bitter-christmas",
-      "filmId": "bitter-christmas",
-      "date": "2026-11-19",
-      "start": "15:15",
-      "end": "17:16",
-      "subtitles": "id-en",
-      "source": {
-        "row": 115,
-        "date": "2026-11-05",
-        "hall": "Audi 6",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-19-1530-wicker",
+      "id": "2026-11-19-1520-wicker",
       "filmId": "wicker",
       "date": "2026-11-19",
-      "start": "15:30",
-      "end": "17:25",
+      "start": "15:20",
+      "end": "17:15",
       "subtitles": "id",
       "source": {
-        "row": 116,
-        "date": "2026-11-05",
+        "row": 109,
         "hall": "Audi 4",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-19-1535-never-after-dark",
-      "filmId": "never-after-dark",
+      "id": "2026-11-19-1525-all-of-a-sudden",
+      "filmId": "all-of-a-sudden",
+      "date": "2026-11-19",
+      "start": "15:25",
+      "end": "18:51",
+      "subtitles": "id-en",
+      "source": {
+        "row": 110,
+        "hall": "Audi 6",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-19-1535-death-has-no-master",
+      "filmId": "death-has-no-master",
       "date": "2026-11-19",
       "start": "15:35",
       "end": "17:29",
       "subtitles": "id",
       "source": {
-        "row": 117,
-        "date": "2026-11-05",
+        "row": 111,
+        "hall": "Audi 8",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-19-1540-never-after-dark",
+      "filmId": "never-after-dark",
+      "date": "2026-11-19",
+      "start": "15:40",
+      "end": "17:34",
+      "subtitles": "id",
+      "source": {
+        "row": 112,
         "hall": "Audi 7",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-19-1605-sandal-jepit-no-10",
-      "filmId": "sandal-jepit-no-10",
+      "id": "2026-11-19-1730-four-minus-three",
+      "filmId": "four-minus-three",
       "date": "2026-11-19",
-      "start": "16:05",
-      "end": "17:56",
-      "subtitles": "en",
-      "source": {
-        "row": 118,
-        "date": "2026-11-05",
-        "hall": "Audi 11",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-19-1735-the-birthday-party",
-      "filmId": "the-birthday-party",
-      "date": "2026-11-19",
-      "start": "17:35",
-      "end": "19:39",
+      "start": "17:30",
+      "end": "19:41",
       "subtitles": "id",
       "source": {
-        "row": 121,
-        "date": "2026-11-05",
+        "row": 113,
+        "hall": "Audi 9",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-19-1730-karma",
+      "filmId": "karma",
+      "date": "2026-11-19",
+      "start": "17:30",
+      "end": "20:00",
+      "subtitles": "id",
+      "source": {
+        "row": 114,
         "hall": "Audi 4",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-19-1735-the-debut",
-      "filmId": "the-debut",
-      "date": "2026-11-19",
-      "start": "17:35",
-      "end": "19:30",
-      "subtitles": "id",
-      "source": {
-        "row": 119,
-        "date": "2026-11-05",
-        "hall": "Audi 6",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-19-1735-tuner",
-      "filmId": "tuner",
-      "date": "2026-11-19",
-      "start": "17:35",
-      "end": "19:33",
-      "subtitles": "id",
-      "source": {
-        "row": 120,
-        "date": "2026-11-05",
-        "hall": "Audi 3",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-19-1745-kill-me",
+      "id": "2026-11-19-1750-kill-me",
       "filmId": "kill-me",
       "date": "2026-11-19",
-      "start": "17:45",
-      "end": "19:39",
+      "start": "17:50",
+      "end": "19:44",
       "subtitles": "id",
       "source": {
-        "row": 122,
-        "date": "2026-11-05",
+        "row": 115,
         "hall": "Audi 7",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-19-1845-death-has-no-master",
-      "filmId": "death-has-no-master",
+      "id": "2026-11-19-1750-musk",
+      "filmId": "musk",
       "date": "2026-11-19",
-      "start": "18:45",
-      "end": "20:39",
+      "start": "17:50",
+      "end": "21:55",
       "subtitles": "id",
       "source": {
-        "row": 123,
-        "date": "2026-11-05",
-        "hall": "Audi 11",
-        "remarks": null
+        "row": 116,
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-19-1945-surprise-film-1",
+      "id": "2026-11-19-1910-surprise-film-1",
       "filmId": "surprise-film-1",
       "date": "2026-11-19",
-      "start": "19:45",
-      "end": "21:38",
+      "start": "19:10",
+      "end": "21:03",
       "subtitles": "id",
       "source": {
-        "row": 124,
-        "date": "2026-11-05",
+        "row": 117,
         "hall": "Audi 6",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-19-1950-saccharine",
-      "filmId": "saccharine",
+      "id": "2026-11-19-1955-tuner",
+      "filmId": "tuner",
       "date": "2026-11-19",
-      "start": "19:50",
+      "start": "19:55",
       "end": "21:53",
       "subtitles": "id",
       "source": {
-        "row": 125,
-        "date": "2026-11-05",
-        "hall": "Audi 3",
-        "remarks": null
+        "row": 118,
+        "hall": "Audi 9",
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-19-1955-la-bola-negra",
-      "filmId": "la-bola-negra",
+      "id": "2026-11-19-2015-woman-unknown",
+      "filmId": "woman-unknown",
       "date": "2026-11-19",
-      "start": "19:55",
-      "end": "22:40",
-      "subtitles": "id-en",
-      "source": {
-        "row": 126,
-        "date": "2026-11-05",
-        "hall": "Audi 7",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-19-2005-karma",
-      "filmId": "karma",
-      "date": "2026-11-19",
-      "start": "20:05",
-      "end": "22:35",
+      "start": "20:15",
+      "end": "22:29",
       "subtitles": "id",
       "source": {
-        "row": 127,
-        "date": "2026-11-05",
+        "row": 119,
         "hall": "Audi 4",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-19-2100-musk",
-      "filmId": "musk",
-      "date": "2026-11-19",
-      "start": "21:00",
-      "end": "01:05",
-      "subtitles": null,
-      "source": {
-        "row": 128,
-        "date": "2026-11-05",
-        "hall": "Audi 11",
-        "remarks": null
+        "remarks": "21+"
       }
     },
     {
@@ -4027,290 +3714,256 @@
       "end": "12:21",
       "subtitles": "en",
       "source": {
-        "row": 129,
-        "date": "2026-11-06",
-        "hall": "Audi 11",
-        "remarks": null
+        "row": 120,
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-20-1220-la-bola-negra",
-      "filmId": "la-bola-negra",
-      "date": "2026-11-20",
-      "start": "12:20",
-      "end": "15:05",
-      "subtitles": "id-en",
-      "source": {
-        "row": 130,
-        "date": "2026-11-06",
-        "hall": "Audi 4",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-1240-queen-at-sea",
+      "id": "2026-11-20-1235-queen-at-sea",
       "filmId": "queen-at-sea",
       "date": "2026-11-20",
-      "start": "12:40",
-      "end": "14:51",
+      "start": "12:35",
+      "end": "14:46",
+      "subtitles": "id",
+      "source": {
+        "row": 121,
+        "hall": "Audi 8",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-20-1300-the-debut",
+      "filmId": "the-debut",
+      "date": "2026-11-20",
+      "start": "13:00",
+      "end": "14:55",
+      "subtitles": null,
+      "source": {
+        "row": 122,
+        "hall": "Audi 4",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-20-1305-parallel-tales",
+      "filmId": "parallel-tales",
+      "date": "2026-11-20",
+      "start": "13:05",
+      "end": "15:34",
+      "subtitles": "id-en",
+      "source": {
+        "row": 123,
+        "hall": "Audi 7",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-20-1310-mariinka",
+      "filmId": "mariinka",
+      "date": "2026-11-20",
+      "start": "13:10",
+      "end": "14:54",
+      "subtitles": "id",
+      "source": {
+        "row": 124,
+        "hall": "Audi 9",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-20-1315-paradise",
+      "filmId": "paradise",
+      "date": "2026-11-20",
+      "start": "13:15",
+      "end": "14:55",
+      "subtitles": "id",
+      "source": {
+        "row": 125,
+        "hall": "Audi 6",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-20-1505-idiots",
+      "filmId": "idiots",
+      "date": "2026-11-20",
+      "start": "15:05",
+      "end": "16:55",
+      "subtitles": "id",
+      "source": {
+        "row": 126,
+        "hall": "Audi 8",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-20-1510-flies",
+      "filmId": "flies",
+      "date": "2026-11-20",
+      "start": "15:10",
+      "end": "17:01",
+      "subtitles": "id",
+      "source": {
+        "row": 127,
+        "hall": "Audi 9",
+        "remarks": "13+"
+      }
+    },
+    {
+      "id": "2026-11-20-1510-titanic-ocean",
+      "filmId": "titanic-ocean",
+      "date": "2026-11-20",
+      "start": "15:10",
+      "end": "17:30",
+      "subtitles": "id",
+      "source": {
+        "row": 128,
+        "hall": "Audi 6",
+        "remarks": "13+"
+      }
+    },
+    {
+      "id": "2026-11-20-1510-zejtune",
+      "filmId": "zejtune",
+      "date": "2026-11-20",
+      "start": "15:10",
+      "end": "17:08",
+      "subtitles": "id",
+      "source": {
+        "row": 129,
+        "hall": "Audi 4",
+        "remarks": "13+"
+      }
+    },
+    {
+      "id": "2026-11-20-1550-enjoy-your-stay",
+      "filmId": "enjoy-your-stay",
+      "date": "2026-11-20",
+      "start": "15:50",
+      "end": "17:39",
+      "subtitles": "id",
+      "source": {
+        "row": 130,
+        "hall": "Audi 7",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-20-1710-forsaken",
+      "filmId": "forsaken",
+      "date": "2026-11-20",
+      "start": "17:10",
+      "end": "19:00",
       "subtitles": "id",
       "source": {
         "row": 131,
-        "date": "2026-11-06",
-        "hall": "Audi 11",
-        "remarks": null
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-20-1300-mariinka",
-      "filmId": "mariinka",
+      "id": "2026-11-20-1720-surprise-film-2",
+      "filmId": "surprise-film-2",
       "date": "2026-11-20",
-      "start": "13:00",
-      "end": "14:44",
+      "start": "17:20",
+      "end": "20:05",
       "subtitles": "id",
       "source": {
         "row": 132,
-        "date": "2026-11-06",
-        "hall": "Audi 3",
-        "remarks": null
+        "hall": "Audi 9",
+        "remarks": "13+"
       }
     },
     {
-      "id": "2026-11-20-1300-paradise",
-      "filmId": "paradise",
+      "id": "2026-11-20-1725-the-weight",
+      "filmId": "the-weight",
       "date": "2026-11-20",
-      "start": "13:00",
-      "end": "14:40",
+      "start": "17:25",
+      "end": "19:27",
       "subtitles": "id",
       "source": {
         "row": 133,
-        "date": "2026-11-06",
-        "hall": "Audi 6",
-        "remarks": null
+        "hall": "Audi 4",
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-20-1300-parallel-tales",
-      "filmId": "parallel-tales",
+      "id": "2026-11-20-1750-home-sweet-home",
+      "filmId": "home-sweet-home",
       "date": "2026-11-20",
-      "start": "13:00",
-      "end": "15:29",
-      "subtitles": "id-en",
+      "start": "17:50",
+      "end": "19:52",
+      "subtitles": "id",
       "source": {
         "row": 134,
-        "date": "2026-11-06",
-        "hall": "Audi 7",
-        "remarks": null
+        "hall": "Audi 6",
+        "remarks": "13+"
       }
     },
     {
-      "id": "2026-11-20-1455-titanic-ocean",
-      "filmId": "titanic-ocean",
+      "id": "2026-11-20-1755-wicker",
+      "filmId": "wicker",
       "date": "2026-11-20",
-      "start": "14:55",
-      "end": "17:15",
+      "start": "17:55",
+      "end": "19:50",
       "subtitles": "id",
       "source": {
         "row": 135,
-        "date": "2026-11-06",
-        "hall": "Audi 6",
-        "remarks": "with QnA"
+        "hall": "Audi 7",
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-20-1500-flies",
-      "filmId": "flies",
+      "id": "2026-11-20-1915-the-loneliest-man-in-town",
+      "filmId": "the-loneliest-man-in-town",
       "date": "2026-11-20",
-      "start": "15:00",
-      "end": "16:51",
+      "start": "19:15",
+      "end": "20:51",
       "subtitles": "id",
       "source": {
         "row": 136,
-        "date": "2026-11-06",
-        "hall": "Audi 3",
-        "remarks": null
+        "hall": "Audi 8",
+        "remarks": "13+"
       }
     },
     {
-      "id": "2026-11-20-1510-idiots",
-      "filmId": "idiots",
-      "date": "2026-11-20",
-      "start": "15:10",
-      "end": "17:00",
-      "subtitles": "id",
-      "source": {
-        "row": 137,
-        "date": "2026-11-06",
-        "hall": "Audi 11",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-1525-tua-tua-keladi",
-      "filmId": "tua-tua-keladi",
-      "date": "2026-11-20",
-      "start": "15:25",
-      "end": "17:00",
-      "subtitles": "en",
-      "source": {
-        "row": 138,
-        "date": "2026-11-06",
-        "hall": "Audi 4",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-1545-enjoy-your-stay",
-      "filmId": "enjoy-your-stay",
-      "date": "2026-11-20",
-      "start": "15:45",
-      "end": "17:34",
-      "subtitles": "id",
-      "source": {
-        "row": 139,
-        "date": "2026-11-06",
-        "hall": "Audi 7",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-1710-club-kid",
-      "filmId": "club-kid",
-      "date": "2026-11-20",
-      "start": "17:10",
-      "end": "19:26",
-      "subtitles": null,
-      "source": {
-        "row": 140,
-        "date": "2026-11-06",
-        "hall": "Audi 3",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-1715-forsaken",
-      "filmId": "forsaken",
-      "date": "2026-11-20",
-      "start": "17:15",
-      "end": "19:05",
-      "subtitles": "id",
-      "source": {
-        "row": 141,
-        "date": "2026-11-06",
-        "hall": "Audi 11",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-1750-minotaur",
-      "filmId": "minotaur",
-      "date": "2026-11-20",
-      "start": "17:50",
-      "end": "20:15",
-      "subtitles": "id-en",
-      "source": {
-        "row": 142,
-        "date": "2026-11-06",
-        "hall": "Audi 7",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-1750-the-invisible-guest",
-      "filmId": "the-invisible-guest",
-      "date": "2026-11-20",
-      "start": "17:50",
-      "end": "20:01",
-      "subtitles": "en",
-      "source": {
-        "row": 143,
-        "date": "2026-11-06",
-        "hall": "Audi 4",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-1805-home-sweet-home",
-      "filmId": "home-sweet-home",
-      "date": "2026-11-20",
-      "start": "18:05",
-      "end": "20:07",
-      "subtitles": "id",
-      "source": {
-        "row": 144,
-        "date": "2026-11-06",
-        "hall": "Audi 6",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-1920-woman-unknown",
-      "filmId": "woman-unknown",
-      "date": "2026-11-20",
-      "start": "19:20",
-      "end": "21:34",
-      "subtitles": null,
-      "source": {
-        "row": 145,
-        "date": "2026-11-06",
-        "hall": "Audi 11",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-1940-surprise-film-2",
-      "filmId": "surprise-film-2",
-      "date": "2026-11-20",
-      "start": "19:40",
-      "end": "22:25",
-      "subtitles": null,
-      "source": {
-        "row": 146,
-        "date": "2026-11-06",
-        "hall": "Audi 3",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-2025-the-dreamed-adventure",
-      "filmId": "the-dreamed-adventure",
-      "date": "2026-11-20",
-      "start": "20:25",
-      "end": "23:22",
-      "subtitles": "id",
-      "source": {
-        "row": 147,
-        "date": "2026-11-06",
-        "hall": "Audi 6",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-20-2040-the-samurai-and-the-prisoner",
+      "id": "2026-11-20-2005-the-samurai-and-the-prisoner",
       "filmId": "the-samurai-and-the-prisoner",
       "date": "2026-11-20",
-      "start": "20:40",
-      "end": "23:17",
+      "start": "20:05",
+      "end": "22:42",
       "subtitles": "id-en",
       "source": {
-        "row": 148,
-        "date": "2026-11-06",
+        "row": 137,
         "hall": "Audi 7",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-20-2050-the-weight",
-      "filmId": "the-weight",
+      "id": "2026-11-20-2010-all-of-a-sudden",
+      "filmId": "all-of-a-sudden",
       "date": "2026-11-20",
-      "start": "20:50",
-      "end": "22:52",
-      "subtitles": "id",
+      "start": "20:10",
+      "end": "23:36",
+      "subtitles": "id-en",
       "source": {
-        "row": 149,
-        "date": "2026-11-06",
-        "hall": "Audi 4",
-        "remarks": null
+        "row": 138,
+        "hall": "Audi 6",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-20-2110-ink",
+      "filmId": "ink",
+      "date": "2026-11-20",
+      "start": "21:10",
+      "end": "23:16",
+      "subtitles": null,
+      "source": {
+        "row": 139,
+        "hall": "Audi 8",
+        "remarks": "21+"
       }
     },
     {
@@ -4321,10 +3974,9 @@
       "end": "15:57",
       "subtitles": "id",
       "source": {
-        "row": 150,
-        "date": "2026-11-07",
-        "hall": "Audi 11",
-        "remarks": null
+        "row": 140,
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     },
     {
@@ -4335,10 +3987,9 @@
       "end": "12:37",
       "subtitles": "id",
       "source": {
-        "row": 151,
-        "date": "2026-11-07",
+        "row": 141,
         "hall": "Audi 7",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
@@ -4349,24 +4000,9 @@
       "end": "14:36",
       "subtitles": "id",
       "source": {
-        "row": 152,
-        "date": "2026-11-07",
+        "row": 142,
         "hall": "Audi 7",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-21-1300-a-man-of-his-time",
-      "filmId": "a-man-of-his-time",
-      "date": "2026-11-21",
-      "start": "13:00",
-      "end": "15:45",
-      "subtitles": "id",
-      "source": {
-        "row": 153,
-        "date": "2026-11-07",
-        "hall": "Audi 3",
-        "remarks": null
+        "remarks": "13+"
       }
     },
     {
@@ -4377,24 +4013,35 @@
       "end": "15:36",
       "subtitles": "id-en",
       "source": {
-        "row": 154,
-        "date": "2026-11-07",
+        "row": 143,
         "hall": "Audi 4",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-21-1300-mouse",
-      "filmId": "mouse",
+      "id": "2026-11-21-1305-a-man-of-his-time",
+      "filmId": "a-man-of-his-time",
       "date": "2026-11-21",
-      "start": "13:00",
-      "end": "15:10",
+      "start": "13:05",
+      "end": "15:50",
       "subtitles": "id",
       "source": {
-        "row": 155,
-        "date": "2026-11-07",
+        "row": 144,
+        "hall": "Audi 9",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-21-1310-mouse",
+      "filmId": "mouse",
+      "date": "2026-11-21",
+      "start": "13:10",
+      "end": "15:20",
+      "subtitles": "id",
+      "source": {
+        "row": 145,
         "hall": "Audi 6",
-        "remarks": null
+        "remarks": "13+"
       }
     },
     {
@@ -4405,24 +4052,22 @@
       "end": "17:32",
       "subtitles": "id-en",
       "source": {
-        "row": 156,
-        "date": "2026-11-07",
+        "row": 146,
         "hall": "Audi 7",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-21-1525-late-fame",
+      "id": "2026-11-21-1535-late-fame",
       "filmId": "late-fame",
       "date": "2026-11-21",
-      "start": "15:25",
-      "end": "17:12",
+      "start": "15:35",
+      "end": "17:22",
       "subtitles": "id",
       "source": {
-        "row": 157,
-        "date": "2026-11-07",
+        "row": 147,
         "hall": "Audi 6",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
@@ -4433,24 +4078,22 @@
       "end": "17:50",
       "subtitles": "id",
       "source": {
-        "row": 158,
-        "date": "2026-11-07",
+        "row": 148,
         "hall": "Audi 4",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-21-1605-sad-girlz",
+      "id": "2026-11-21-1610-sad-girlz",
       "filmId": "sad-girlz",
       "date": "2026-11-21",
-      "start": "16:05",
-      "end": "17:45",
+      "start": "16:10",
+      "end": "17:50",
       "subtitles": "id",
       "source": {
-        "row": 159,
-        "date": "2026-11-07",
-        "hall": "Audi 3",
-        "remarks": null
+        "row": 149,
+        "hall": "Audi 9",
+        "remarks": "13+"
       }
     },
     {
@@ -4461,24 +4104,22 @@
       "end": "18:09",
       "subtitles": "id",
       "source": {
-        "row": 160,
-        "date": "2026-11-07",
-        "hall": "Audi 11",
-        "remarks": null
+        "row": 150,
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-21-1730-nirvanna-the-band-the-show-the-movie",
+      "id": "2026-11-21-1740-nirvanna-the-band-the-show-the-movie",
       "filmId": "nirvanna-the-band-the-show-the-movie",
       "date": "2026-11-21",
-      "start": "17:30",
-      "end": "19:20",
+      "start": "17:40",
+      "end": "19:30",
       "subtitles": "id",
       "source": {
-        "row": 161,
-        "date": "2026-11-07",
+        "row": 151,
         "hall": "Audi 6",
-        "remarks": null
+        "remarks": "13+"
       }
     },
     {
@@ -4489,94 +4130,61 @@
       "end": "20:19",
       "subtitles": "id",
       "source": {
-        "row": 162,
-        "date": "2026-11-07",
+        "row": 152,
         "hall": "Audi 7",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-21-1805-naza",
-      "filmId": "naza",
+      "id": "2026-11-21-1805-minotaur",
+      "filmId": "minotaur",
       "date": "2026-11-21",
       "start": "18:05",
-      "end": "19:32",
+      "end": "20:30",
       "subtitles": "id",
       "source": {
-        "row": 163,
-        "date": "2026-11-07",
+        "row": 153,
         "hall": "Audi 4",
-        "remarks": null
+        "remarks": "21+"
       }
     },
     {
-      "id": "2026-11-21-1805-shame-and-money",
+      "id": "2026-11-21-1810-shame-and-money",
       "filmId": "shame-and-money",
       "date": "2026-11-21",
-      "start": "18:05",
-      "end": "20:24",
+      "start": "18:10",
+      "end": "20:29",
       "subtitles": "id",
       "source": {
-        "row": 164,
-        "date": "2026-11-07",
-        "hall": "Audi 3",
-        "remarks": null
+        "row": 154,
+        "hall": "Audi 9",
+        "remarks": "13+"
       }
     },
     {
-      "id": "2026-11-21-1830-ink",
-      "filmId": "ink",
+      "id": "2026-11-21-1830-la-gradiva",
+      "filmId": "la-gradiva",
       "date": "2026-11-21",
       "start": "18:30",
-      "end": "20:36",
-      "subtitles": null,
+      "end": "21:05",
+      "subtitles": "id",
       "source": {
-        "row": 165,
-        "date": "2026-11-07",
-        "hall": "Audi 11",
-        "remarks": null
+        "row": 155,
+        "hall": "Audi 8",
+        "remarks": "21+"
       }
     },
     {
-      "id": "2026-11-21-1900-inherit",
+      "id": "2026-11-21-1945-inherit",
       "filmId": "inherit",
       "date": "2026-11-21",
-      "start": "19:00",
-      "end": "21:18",
+      "start": "19:45",
+      "end": "22:03",
       "subtitles": "en",
       "source": {
-        "row": 166,
-        "date": "2026-11-07",
-        "hall": "Audi 1",
-        "remarks": "with QnA (Banjong & Davika)"
-      }
-    },
-    {
-      "id": "2026-11-21-1935-inherit",
-      "filmId": "inherit",
-      "date": "2026-11-21",
-      "start": "19:35",
-      "end": "21:53",
-      "subtitles": "en",
-      "source": {
-        "row": 167,
-        "date": "2026-11-07",
+        "row": 156,
         "hall": "Audi 6",
-        "remarks": null
-      }
-    },
-    {
-      "id": "2026-11-21-1955-inherit",
-      "filmId": "inherit",
-      "date": "2026-11-21",
-      "start": "19:55",
-      "end": "22:13",
-      "subtitles": "en",
-      "source": {
-        "row": 168,
-        "date": "2026-11-07",
-        "hall": "Audi 4",
-        "remarks": null
+        "remarks": "17+"
       }
     },
     {
@@ -4587,24 +4195,22 @@
       "end": "22:53",
       "subtitles": "en",
       "source": {
-        "row": 169,
-        "date": "2026-11-07",
-        "hall": "Audi 3",
-        "remarks": null
+        "row": 157,
+        "hall": "Audi 7",
+        "remarks": "17+"
       }
     },
     {
-      "id": "2026-11-21-2035-inherit-2",
+      "id": "2026-11-21-2045-inherit",
       "filmId": "inherit",
       "date": "2026-11-21",
-      "start": "20:35",
-      "end": "22:53",
+      "start": "20:45",
+      "end": "23:03",
       "subtitles": "en",
       "source": {
-        "row": 170,
-        "date": "2026-11-07",
-        "hall": "Audi 7",
-        "remarks": null
+        "row": 158,
+        "hall": "Audi 9",
+        "remarks": "17+"
       }
     },
     {
@@ -4615,10 +4221,22 @@
       "end": "23:13",
       "subtitles": "en",
       "source": {
-        "row": 171,
-        "date": "2026-11-07",
-        "hall": "Audi 11",
-        "remarks": null
+        "row": 159,
+        "hall": "Audi 4",
+        "remarks": "17+"
+      }
+    },
+    {
+      "id": "2026-11-21-2120-inherit",
+      "filmId": "inherit",
+      "date": "2026-11-21",
+      "start": "21:20",
+      "end": "23:38",
+      "subtitles": "en",
+      "source": {
+        "row": 160,
+        "hall": "Audi 8",
+        "remarks": "17+"
       }
     }
   ]

@@ -28,10 +28,9 @@ export interface Screening {
   /** HH:MM; start + 10 min of ads + runtime. Earlier than `start` when it runs past midnight. */
   end: string
   subtitles: Subtitles
-  /** Where the row came from in the Jakarta sheet. Not Bandung facts; `date` is null for a screening that came from Bandung's own posted schedule instead. */
+  /** Where the row came from in the Bandung schedule sheet. */
   source: {
     row: number
-    date: string | null
     hall: string | null
     remarks: string | null
   }
@@ -39,7 +38,6 @@ export interface Screening {
 
 export interface FestivalData {
   source: string
-  dayOffset: number
   films: Film[]
   screenings: Screening[]
 }
