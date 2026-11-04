@@ -4,7 +4,7 @@ import type { NuxtError } from '#app'
 const props = defineProps<{ error: NuxtError }>()
 const notFound = computed(() => props.error.statusCode === 404)
 
-useSeoMeta({ title: notFound.value ? 'Not found, Bandung World Cinema 2026' : 'Something broke, Bandung World Cinema 2026' })
+useSeoMeta({ title: notFound.value ? 'Not found, CineRoute' : 'Something broke, CineRoute' })
 </script>
 
 <template>

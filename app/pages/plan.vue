@@ -52,7 +52,7 @@ function undoClear() {
 onBeforeUnmount(() => clearTimeout(undoTimer))
 
 useSeoMeta({
-  title: 'My plan, Bandung World Cinema 2026',
+  title: 'My plan, CineRoute',
   description: 'The screenings you picked for Bandung World Cinema 2026, ready for Google Calendar.',
 })
 </script>

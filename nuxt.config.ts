@@ -13,13 +13,13 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
-      title: 'Bandung World Cinema 2026 schedule planner',
+      title: 'CineRoute, an unofficial Bandung World Cinema 2026 planner',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
           content:
-            'Plan your Bandung World Cinema 2026 screenings at CGV Paris Van Java, 14 to 21 November, and send them to Google Calendar.',
+            'CineRoute is an unofficial planner for Bandung World Cinema 2026 screenings at CGV Paris Van Java, 14 to 21 November. Pick films, catch clashes, and send them to Google Calendar.',
         },
         { name: 'theme-color', content: '#63072C' },
       ],

@@ -3,7 +3,7 @@ const counts = new Map<string, number>()
 for (const s of screenings) counts.set(s.filmId, (counts.get(s.filmId) ?? 0) + 1)
 
 useSeoMeta({
-  title: 'All films, Bandung World Cinema 2026',
+  title: 'All films, CineRoute',
   description: `The ${films.length} films at Bandung World Cinema 2026, with directors, countries and how many times each one screens.`,
 })
 </script>

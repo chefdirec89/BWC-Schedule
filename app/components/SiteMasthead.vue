@@ -8,8 +8,11 @@ const screeningCount = screenings.length
 <template>
   <header v-if="full" class="masthead wrap">
     <h1 class="wordmark">
-      Bandung World<br>Cinema
+      CineRoute
     </h1>
+    <p class="mt-3 text-lg font-semibold">
+      An unofficial planner for Bandung World Cinema 2026.
+    </p>
     <p class="sticker mt-4">
       14–21 Nov 2026
     </p>
@@ -35,8 +38,8 @@ const screeningCount = screenings.length
   </header>
 
   <header v-else class="wrap pt-4 pb-4">
-    <NuxtLink to="/" class="wordmark wordmark--small" aria-label="Bandung World Cinema, back to the schedule">
-      Bandung World Cinema
+    <NuxtLink to="/" class="wordmark wordmark--small" aria-label="CineRoute, back to the schedule">
+      CineRoute
     </NuxtLink>
   </header>
 </template>

@@ -26,8 +26,8 @@ const picksToday = computed(() => plan.picks.value.filter(s => s.date === filter
 const blockedToday = computed(() => visible.value.some(s => !plan.isPicked(s.id) && clashingPicks(s, plan.picks.value).length))
 
 useSeoMeta({
-  title: () => `${longDay(filters.day.value)}, Bandung World Cinema 2026`,
-  description: 'Plan your Bandung World Cinema 2026 screenings at CGV Paris Van Java, 14 to 21 November, and send them to Google Calendar.',
+  title: () => `${longDay(filters.day.value)}, CineRoute`,
+  description: 'CineRoute is an unofficial planner for Bandung World Cinema 2026 screenings at CGV Paris Van Java, 14 to 21 November. Pick films, catch clashes, and send them to Google Calendar.',
 })
 </script>
 

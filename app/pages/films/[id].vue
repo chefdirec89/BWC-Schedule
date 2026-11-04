@@ -23,7 +23,7 @@ const details = computed(() => [
 ].filter(d => d.value))
 
 useSeoMeta({
-  title: () => `${f.value.title}, Bandung World Cinema 2026`,
+  title: () => `${f.value.title}, CineRoute`,
   description: () => synopsis.value.slice(0, 155) || `${f.value.title} at Bandung World Cinema 2026.`,
 })
 </script>

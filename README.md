@@ -1,6 +1,6 @@
-# Bandung World Cinema 2026: schedule planner
+# CineRoute
 
-Pick screenings for Bandung World Cinema (CGV Paris Van Java, 14 to 21 November 2026), see clashes, and send each pick to Google Calendar. Online screenings run on KlikFilm from 31 October to 21 November 2026.
+An unofficial schedule planner for Bandung World Cinema 2026, not affiliated with or endorsed by the festival. Pick screenings (CGV Paris Van Java, 14 to 21 November 2026), see clashes, and send each pick to Google Calendar. Online screenings run on KlikFilm from 31 October to 21 November 2026.
 
 Nuxt 4 · Tailwind CSS 4 · TypeScript. Plans live in the visitor's browser (localStorage); nothing is sent to a server.
 
